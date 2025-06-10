@@ -1,0 +1,27 @@
+================================================================================
+PROJECT TEST RESULTS SUMMARY
+================================================================================
+
+Test Run: 2025-06-10 13:44:39
+
+PROJECT STATUS:
+----------------------------------------
+✅ Project is running successfully
+
+DATA FLOW ANALYSIS:
+----------------------------------------
+✅ Analysis completed successfully
+   - Files analyzed: 589
+   - Dependencies found: 29
+   - API endpoints: 29
+   - Data flows: 31
+   - SSH connections monitored: 15
+   - Network connections monitored: 138
+
+GENERATED FILES:
+----------------------------------------
+✅ data_flow_analysis.json (1157KB)
+✅ data_flow_summary.txt (186KB)
+✅ data_flow_diagram.txt (3KB)
+✅ ssh_monitor.log (362072KB)
+

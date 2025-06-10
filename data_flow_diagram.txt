@@ -1,0 +1,53 @@
+================================================================================
+DATA FLOW DIAGRAM
+================================================================================
+
+MAIN PIPELINE FLOW:
+----------------------------------------
+start.sh
+    ↓
+step1.py (API Collection)
+    ↓ (writes)
+step1.json
+    ↓ (reads)
+step2.py (Data Processing)
+    ↓ (writes)
+step2.json
+    ↓ (reads)
+step7.py (Filtering)
+    ↓ (writes)
+step7_matches.log
+
+FILE INTERACTION MATRIX:
+----------------------------------------
+File                 Reads From                     Writes To                     
+--------------------------------------------------------------------------------
+test_api_rate_limits.py                                                              
+test_pipeline_flow.py                                                              
+test_endpoints.py                                                                 
+user_interaction_logger.py                                                              
+fix_step2_merge.py                                                                
+analyze_logging.py                                                                
+log_interaction.py                                                                
+integration_test.py  step1.json                                                   
+test_step2_debug.py  step1.json                                                   
+debug_merge.py       step1.json                                                   
+generate_mock_data.py                                                              
+step2_field_paths_reference.py                                                              
+python_naming_consistency_analyzer.py                                                              
+auto_logger.py                                                                    
+filter_odds_minutes.py /root/6-4-2025/step2.json, /                                 
+step7.py                                                                          
+data_flow_analyzer.py                                                              
+oddsconfig.py                                                                     
+step2.py                                                                          
+debug_step7.py       step2.json                                                   
+test_merge_detailed.py step1.json                                                   
+run_step2_debug.py   step1.json                                                   
+test_analyzer.py                                                                  
+analyze_json_fields.py step1.json                                                   
+run_comprehensive_test.py                                                              
+test_step2_field_mapping.py step1.json, step2.json                                       
+test_pipeline.py                                                                  
+step1.py                                                                          
+verify_filtering.py  /root/6-4-2025/step2.json                                    

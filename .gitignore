@@ -30,16 +30,14 @@ ENV/
 # Log files
 *.log
 *.log.*
+!step7_simple.log
 step1.log.*
 
 # JSON data files (optional - comment out if you want to include data)
 step1_*.json
-step1.json
-step2.json  # ignore large data file
 
 # Exclude large JSON data files
 env/
-step2.json
 
 # Process ID files
 *.pid
@@ -55,17 +53,11 @@ step2.json
 .Trashes
 ehthumbs.db
 Thumbs.db
-step2.json
 
 # Large JSON files that exceed GitHub's 100MB limit
-step2.json.bak
-data_backup/step2.json.backup
-data_backup/step2.json
-data_backup/step1.json.backup
 
 # Large step1 files  
 step1_2025-06-07.json
-step1.json
 
 # Large data files
 *.bak

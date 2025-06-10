@@ -51,11 +51,23 @@ Each odds array contains 8 elements: [timestamp, minute, val1, val2, val3, statu
 - [0] timestamp: Unix timestamp when odds were recorded
 - [1] minute: Match minute (string) - we filter for minutes 2-6
 - [2] val1: First odds value (varies by type)
-- [3] val2: Second odds value (Handicap/Total)
+    - Money Line: Home win odds
+    - Spread: Home team odds
+    - Over/Under: Over odds
+    - Corners: Over odds
+- [3] val2: The line/handicap
+    - Money Line: Draw odds
+    - Spread: Handicap (positive=home gives, negative=away gives)
+    - Over/Under: Total goals line
+    - Corners: Total corners line
 - [4] val3: Third odds value (varies by type)
+    - Money Line: Away win odds
+    - Spread: Away team odds
+    - Over/Under: Under odds
+    - Corners: Under odds
 - [5] status: Match status code
 - [6] sealed: Whether odds are sealed (0=No, 1=Yes)
-- [7] score: Current score as "home-away"
+- [7] score: Current score as "home-away" string
 
 ODDS TYPES (renamed for clarity):
 ---------------------------------
@@ -812,14 +824,19 @@ def main():
                                               country_lookup),
             "metadata": {
                 "total_matches": len(live_matches.get("results", [])),
-                "timestamp": datetime.now(TZ).isoformat(),
+                "timestamp": datetime.now(TZ).strftime("%m/%d/%Y %I:%M:%S %p %Z"),
                 "source": "step2.py"
             }
         }
         
         # Add processing time
-        processing_time = time.time() - start_time
-        merged_data["metadata"]["processing_time"] = f"{processing_time:.2f} seconds"
+        elapsed_time = time.time() - start_time
+        processing_time = f"{elapsed_time:.2f} seconds"
+        merged_data["metadata"]["processing_time"] = processing_time
+        
+        # Count in-play matches (status_id 2-7)
+        in_play_count = sum(1 for match in merged_data["summaries"] 
+                           if 2 <= match.get("status_id", 0) <= 7)
         
         # Add step2 processing summary
         merged_data["step2_processing_summary"] = {
@@ -827,10 +844,11 @@ def main():
             "input_file": STEP1_JSON,
             "output_file": STEP2_JSON,
             "total_matches_processed": len(merged_data["summaries"]),
-            "processing_time": f"{processing_time:.2f} seconds",
+            "in_play_matches": in_play_count,
+            "processing_time": processing_time,
             "pipeline_timing": {
-                "step2_start": datetime.now(TZ).isoformat(),
-                "step2_duration": f"{processing_time:.2f} seconds"
+                "step2_start": datetime.now(TZ).strftime("%m/%d/%Y %I:%M:%S %p %Z"),
+                "step2_duration": processing_time
             }
         }
         
@@ -839,10 +857,20 @@ def main():
         success = save_match_summaries(merged_data, STEP2_JSON)
         
         if success:
-            logger.info(f"Step 2 completed successfully in {processing_time:.2f} seconds")
+            logger.info(f"Step 2 completed successfully in {processing_time} seconds")
             logger.info(f"Created {len(merged_data['summaries'])} match summaries")
         else:
             logger.error("Step 2 failed to save output")
+            
+        # Call Step 7 after Step 2 completes
+        try:
+            import step7
+            logger.info("Starting Step 7 (filter & pretty-print)...")
+            step7.run_step7(matches_list=merged_data['summaries'])
+        except (ImportError, AttributeError) as e:
+            logger.error(f"Failed to run Step 7: {e}")
+            import traceback
+            traceback.print_exc()
             
     except FileNotFoundError:
         logger.error(f"Could not find {STEP1_JSON}. Please run step1.py first.")
@@ -851,6 +879,119 @@ def main():
     except Exception as e:
         logger.error(f"Unexpected error in Step 2: {e}")
         raise
+
+def run_step2(pipeline_start_time=None):
+    """
+    Run Step 2 processing - can be called from other modules.
+    Returns the list of summaries for use by other steps.
+    """
+    logger.info("Step 2 processing started...")
+    
+    # Track processing time
+    start_time = time.time()
+    
+    try:
+        # Load step1.json
+        logger.info(f"Loading {STEP1_JSON}...")
+        with open(STEP1_JSON, 'r', encoding='utf-8') as f:
+            step1_data = json.load(f)
+        
+        # Extract live matches and payload data
+        live_matches = step1_data.get("live_matches", {})
+        payload_data = {k: v for k, v in step1_data.items() if k != "live_matches"}
+        
+        # Build country lookup dictionary
+        countries_data = payload_data.get("countries", {})
+        country_lookup = {}
+        for key, value in countries_data.items():
+            if isinstance(value, list):
+                for country in value:
+                    if isinstance(country, dict) and "id" in country:
+                        country_lookup[country["id"]] = country
+        
+        logger.info(f"Found {len(live_matches.get('results', []))} live matches")
+        logger.info(f"Found {len(payload_data.get('team_info', {}))} teams")
+        logger.info(f"Found {len(payload_data.get('competition_info', {}))} competitions")
+        logger.info(f"Found {len(country_lookup)} countries")
+        
+        # Merge and summarize
+        logger.info("Merging and summarizing match data...")
+        summaries = merge_and_summarize(
+            live_matches.get("results", []), 
+            payload_data.get("match_details", {}), 
+            payload_data.get("match_odds", {}), 
+            payload_data.get("team_info", {}), 
+            payload_data.get("competition_info", {}), 
+            country_lookup
+        )
+        
+        # Create the full data structure
+        merged_data = {
+            "summaries": summaries,
+            "metadata": {
+                "total_matches": len(live_matches.get("results", [])),
+                "timestamp": datetime.now(TZ).strftime("%m/%d/%Y %I:%M:%S %p %Z"),
+                "source": "step2.py"
+            }
+        }
+        
+        # Add processing time
+        elapsed_time = time.time() - start_time
+        processing_time = f"{elapsed_time:.2f} seconds"
+        merged_data["metadata"]["processing_time"] = processing_time
+        
+        # Count in-play matches (status_id 2-7)
+        in_play_count = sum(1 for match in summaries 
+                           if 2 <= match.get("status_id", 0) <= 7)
+        
+        # Add step2 processing summary
+        merged_data["step2_processing_summary"] = {
+            "processed_at": datetime.now(TZ).strftime("%m/%d/%Y %I:%M:%S %p %Z"),
+            "input_file": STEP1_JSON,
+            "output_file": STEP2_JSON,
+            "total_matches_processed": len(summaries),
+            "in_play_matches": in_play_count,
+            "processing_time": processing_time,
+            "pipeline_timing": {
+                "step2_start": datetime.now(TZ).strftime("%m/%d/%Y %I:%M:%S %p %Z"),
+                "step2_duration": processing_time
+            }
+        }
+        
+        # If pipeline_start_time is provided, add it to timing
+        if pipeline_start_time:
+            merged_data["step2_processing_summary"]["pipeline_timing"]["pipeline_start"] = pipeline_start_time
+        
+        # Save to step2.json
+        logger.info(f"Saving {len(summaries)} match summaries to {STEP2_JSON}...")
+        success = save_match_summaries(merged_data, STEP2_JSON)
+        
+        if success:
+            logger.info(f"Step 2 completed successfully in {processing_time} seconds")
+            logger.info(f"Created {len(summaries)} match summaries")
+            # Call Step 7 after Step 2 completes
+            try:
+                import step7
+                logger.info("Starting Step 7 (filter & pretty-print)...")
+                step7.run_step7(matches_list=summaries)
+            except (ImportError, AttributeError) as e:
+                logger.error(f"Failed to run Step 7 due to import or attribute error: {e}")
+            return summaries
+        else:
+            logger.error("Step 2 failed to save output")
+            return []
+            
+    except FileNotFoundError:
+        logger.error(f"Could not find {STEP1_JSON}. Please run step1.py first.")
+        return []
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON in {STEP1_JSON}: {e}")
+        return []
+    except Exception as e:
+        logger.error(f"Unexpected error in Step 2: {e}")
+        import traceback
+        traceback.print_exc()
+        return []
 
 if __name__ == "__main__":
     main()

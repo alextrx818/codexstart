@@ -963,6 +963,7 @@ def enrich_match_data(live_data, matches):
     all_data = asyncio.run(enrich_match_data_async(matches))
     
     # Post-process to add status_id to matches (preserve original logic)
+    environment_count = 0
     for match in matches:
         mid = match.get("id")
         detail_wrap = all_data["match_details"].get(mid, {})
@@ -976,12 +977,24 @@ def enrich_match_data(live_data, matches):
         # Extract status_id from match details and add it to the main match object
         if detail.get("status_id") is not None:
             match["status_id"] = detail.get("status_id")
+            
+        # Log environment data if present
+        if detail.get("environment"):
+            environment_count += 1
+            env = detail["environment"]
+            logger.info(f"Match {mid} - Environment data found: "
+                       f"Weather={env.get('weather', 'N/A')}, "
+                       f"Temperature={env.get('temperature', 'N/A')}, "
+                       f"Wind={env.get('wind', 'N/A')}, "
+                       f"Humidity={env.get('humidity', 'N/A')}, "
+                       f"Pressure={env.get('pressure', 'N/A')}")
     
     # Log completion summary
     detail_end = datetime.now()
     detail_duration = (detail_end - detail_start).total_seconds()
     
     logger.info(f"Detailed data fetch time: {detail_duration:.2f} seconds")
+    logger.info(f"Matches with environment data: {environment_count}/{len(matches)}")
     logger.info(f"Unique teams fetched: {len(all_data['team_info'])}")
     logger.info(f"Unique competitions fetched: {len(all_data['competition_info'])}")
     logger.info(f"Match details fetched: {len(all_data['match_details'])}")
@@ -1212,20 +1225,10 @@ def create_detailed_status_mapping(live_matches_data):
     
     # Official Status ID to description mapping
     status_desc_map = {
-        0: "Abnormal (suggest hiding)",
-        1: "Not started",
-        2: "First half",
-        3: "Half-time",
-        4: "Second half",
-        5: "Overtime",
-        6: "Overtime (deprecated)",
-        7: "Penalty Shoot-out",
-        8: "End",
-        9: "Delay",
-        10: "Interrupt",
-        11: "Cut in half",
-        12: "Cancel",
-        13: "To be determined"
+        0: "Abnormal", 1: "Not started", 2: "First half", 3: "Half-time",
+        4: "Second half", 5: "Overtime", 6: "Overtime (deprecated)",
+        7: "Penalty Shoot-out", 8: "End", 9: "Delay", 10: "Interrupt",
+        11: "Cut in half", 12: "Cancel", 13: "To be determined"
     }
     
     # Group matches by status
@@ -1507,27 +1510,8 @@ def continuous_loop():
                 traceback.print_exc()
                 summaries = []  # Continue to Step 7 even if Step 2 fails
 
-            # ─── Step 7: Filter & Pretty-Print ─────────────────────────────────────────
-            logger.info("Starting Step 7 (filter & pretty-print)...")
-            start_s7 = time.time()
-            try:
-                step7.run_step7(matches_list=summaries if summaries else None)
-                s7_time = time.time() - start_s7
-                logger.info(f"STEP 7 – run_step7: {s7_time:.2f}s")
-                
-                # Calculate total pipeline time from Step 1 start to Step 7 completion
-                total_pipeline_time = time.time() - cycle_start
-                logger.info(f"STEP 7 → Filter & pretty-print completed successfully.")
-                logger.info(f"TOTAL PIPELINE TIME (Step 1 → Step 7): {total_pipeline_time:.2f} seconds")
-                
-                # Update both step1.json and step2.json with the complete pipeline timing
-                update_step1_pipeline_timing(total_pipeline_time)
-                update_step2_pipeline_timing(total_pipeline_time)
-                
-            except Exception as e7:
-                s7_time = time.time() - start_s7
-                logger.error(f"STEP 7 failed after {s7_time:.2f}s: {e7}")
-                traceback.print_exc()
+            # Let step2 handle calling step7
+            # step7.run_step7(matches_list=summaries)
 
             # Daily rotation file (once per day)
             ny_tz = pytz.timezone("America/New_York")
@@ -1593,20 +1577,9 @@ def run_single_cycle():
         s2_time = time.time() - start_s2
         print(f"Step 2: Produced {len(summaries)} summaries in {s2_time:.2f}s")
         
-        # Step 7: Filter and display with timing
-        start_s7 = time.time()
-        step7.run_step7(matches_list=summaries)
-        s7_time = time.time() - start_s7
-        
-        # Calculate total pipeline time from Step 1 to Step 7 completion
-        total_pipeline_time = time.time() - pipeline_start
-        print(f"Step 7: Filter & pretty-print completed in {s7_time:.2f}s")
-        print(f"TOTAL PIPELINE TIME (Step 1 → Step 7): {total_pipeline_time:.2f} seconds")
-        
-        # Update both step1.json and step2.json with the complete pipeline timing
-        update_step1_pipeline_timing(total_pipeline_time)
-        update_step2_pipeline_timing(total_pipeline_time)
-        
+        # Let step2 handle calling step7
+        # step7.run_step7(matches_list=summaries)
+
         # Daily rotation file
         ny_tz = pytz.timezone("America/New_York")
         ny_now = datetime.now(ny_tz)
@@ -1670,31 +1643,30 @@ def update_step1_pipeline_timing(total_pipeline_time: float):
     try:
         step1_file = Path("step1.json")
         if step1_file.exists():
-            with open(step1_file, "r", encoding="utf-8") as f:
+            with open(step1_file, 'r') as f:
                 data = json.load(f)
             
-            # Update the pipeline timing in the completion summary section
-            if "step1_completion_summary" in data:
-                data["step1_completion_summary"]["total_pipeline_time"] = f"{total_pipeline_time:.2f} seconds"
+            if 'step1_completion_summary' in data:
+                # Update completion status to show full pipeline completion
+                ny_time = get_ny_time_str()
+                data['step1_completion_summary']['completion_status'] = f"COMPLETE PIPELINE (Step 1→7) – FINISHED SUCCESSFULLY – {ny_time}"
+                data['step1_completion_summary']['total_pipeline_time'] = f"{total_pipeline_time:.2f} seconds"
                 
                 # Update completion status to show full pipeline completion
-                data["step1_completion_summary"]["completion_status"] = f"COMPLETE PIPELINE (Step 1→7) – FINISHED SUCCESSFULLY – {datetime.now(pytz.timezone('America/New_York')).strftime('%m/%d/%Y %I:%M:%S %p %Z')}"
-            
-            # Also update the step1_detailed_summary if it exists (from centralized logging)
-            if "step1_detailed_summary" in data and "completion_summary" in data["step1_detailed_summary"]:
-                data["step1_detailed_summary"]["completion_summary"]["total_pipeline_time"] = f"{total_pipeline_time:.2f}s"
-                data["step1_detailed_summary"]["completion_summary"]["status"] = f"COMPLETE PIPELINE (Step 1→7) – FINISHED SUCCESSFULLY – {datetime.now(pytz.timezone('America/New_York')).strftime('%m/%d/%Y %I:%M:%S %p %Z')}"
-            
-            # Save updated data
-            with open(step1_file, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=2, ensure_ascii=False)
+                data["step1_completion_summary"]["completion_status"] = f"COMPLETE PIPELINE (Step 1→7) – FINISHED SUCCESSFULLY – {ny_time}"
+                data["step1_completion_summary"]["total_pipeline_time"] = f"{total_pipeline_time:.2f} seconds"
                 
-            logger.info(f"Updated step1.json with complete pipeline timing: {total_pipeline_time:.2f} seconds")
-        else:
-            logger.warning("step1.json not found, cannot update pipeline timing")
-            
+                # Save updated JSON
+                with open(step1_file, 'w') as f:
+                    json.dump(data, f, indent=2)
+                
+                logger.info(f"Updated {step1_file} footer with total pipeline time: {total_pipeline_time:.2f} seconds")
+                return True
     except Exception as e:
-        logger.error(f"Failed to update step1.json pipeline timing: {e}")
+        logger.error(f"Failed to update step1.json footer: {e}")
+        return False
+    
+    return False
 
 def create_comprehensive_footer(live_data, all_data, total_duration, match_number, ny_time, pipeline_complete=False, total_pipeline_time=None):
     """

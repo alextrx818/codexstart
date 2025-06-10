@@ -31,6 +31,7 @@ ENV/
 *.log
 *.log.*
 !step7_simple.log
+!step7_references_scan.log
 step1.log.*
 
 # JSON data files (optional - comment out if you want to include data)

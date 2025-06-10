@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-06-10T13:43:16.685971",
+  "timestamp": "2025-06-10T14:55:46.607936",
   "project_structure": {
     "root": {
       "directories": [
@@ -12,9 +12,9 @@
       "files": [
         {
           "name": "step7_simple.log",
-          "size": 19502,
+          "size": 24468,
           "extension": ".log",
-          "modified": "2025-06-10T13:43:28.405681"
+          "modified": "2025-06-10T14:55:56.592474"
         },
         {
           "name": "test_api_rate_limits.py",
@@ -57,6 +57,12 @@
           "size": 6185,
           "extension": ".py",
           "modified": "2025-06-08T09:16:38.203725"
+        },
+        {
+          "name": "test_summary.txt",
+          "size": 779,
+          "extension": ".txt",
+          "modified": "2025-06-10T14:26:05.528754"
         },
         {
           "name": "fix_step2_merge.py",
@@ -120,9 +126,9 @@
         },
         {
           "name": "ssh_monitor.log",
-          "size": 285873411,
+          "size": 410828139,
           "extension": ".log",
-          "modified": "2025-06-10T13:44:20.791690"
+          "modified": "2025-06-10T14:56:50.792487"
         },
         {
           "name": "test_step2_debug.py",
@@ -144,9 +150,9 @@
         },
         {
           "name": "start.log",
-          "size": 60679,
+          "size": 74725,
           "extension": ".log",
-          "modified": "2025-06-10T13:43:28.413682"
+          "modified": "2025-06-10T14:55:56.622474"
         },
         {
           "name": "user_interactions.log",
@@ -183,6 +189,12 @@
           "size": 4352137,
           "extension": ".json",
           "modified": "2025-06-10T04:00:40.681776"
+        },
+        {
+          "name": "show_logic_map.py",
+          "size": 7356,
+          "extension": ".py",
+          "modified": "2025-06-10T13:50:39.571825"
         },
         {
           "name": ".env.template",
@@ -227,6 +239,12 @@
           "modified": "2025-06-08T09:16:38.201725"
         },
         {
+          "name": "devin_startup_guide.py",
+          "size": 10369,
+          "extension": ".py",
+          "modified": "2025-06-10T14:49:31.354431"
+        },
+        {
           "name": "auto_logger.py",
           "size": 1094,
           "extension": ".py",
@@ -245,6 +263,12 @@
           "modified": "2025-06-08T11:06:47.105340"
         },
         {
+          "name": "devin_setup.py",
+          "size": 6812,
+          "extension": ".py",
+          "modified": "2025-06-10T14:16:57.587727"
+        },
+        {
           "name": "filter_odds_minutes.py",
           "size": 3689,
           "extension": ".py",
@@ -254,7 +278,7 @@
           "name": "step1.pid",
           "size": 6,
           "extension": ".pid",
-          "modified": "2025-06-10T13:43:25.057681"
+          "modified": "2025-06-10T14:55:51.703473"
         },
         {
           "name": "start.sh",
@@ -287,10 +311,16 @@
           "modified": "2025-06-10T12:54:06.221861"
         },
         {
+          "name": "DEVIN_STARTUP_GUIDE.sh",
+          "size": 1384,
+          "extension": ".sh",
+          "modified": "2025-06-10T14:49:31.354431"
+        },
+        {
           "name": "data_flow_analyzer.py",
           "size": 31483,
           "extension": ".py",
-          "modified": "2025-06-10T13:36:39.177445"
+          "modified": "2025-06-10T13:50:39.571825"
         },
         {
           "name": "step2_development.ipynb",
@@ -300,9 +330,9 @@
         },
         {
           "name": "step1.json",
-          "size": 10259883,
+          "size": 17723888,
           "extension": ".json",
-          "modified": "2025-06-10T13:43:28.247681"
+          "modified": "2025-06-10T14:55:56.298474"
         },
         {
           "name": "LOGGING_CONSISTENCY_CHECKLIST.md",
@@ -386,13 +416,13 @@
           "name": "start_ssh_monitor.sh",
           "size": 3852,
           "extension": ".sh",
-          "modified": "2025-06-10T13:34:16.790307"
+          "modified": "2025-06-10T13:50:39.571825"
         },
         {
           "name": "data_flow_analysis.json",
-          "size": 1140263,
+          "size": 1203979,
           "extension": ".json",
-          "modified": "2025-06-10T13:13:23.918450"
+          "modified": "2025-06-10T14:26:05.513754"
         },
         {
           "name": "END_TO_END_TEST.md",
@@ -402,9 +432,9 @@
         },
         {
           "name": "data_flow_summary.txt",
-          "size": 190862,
+          "size": 193104,
           "extension": ".txt",
-          "modified": "2025-06-10T13:13:23.921450"
+          "modified": "2025-06-10T14:26:05.521754"
         },
         {
           "name": "step2_init.log",
@@ -450,9 +480,9 @@
         },
         {
           "name": "data_flow_diagram.txt",
-          "size": 3063,
+          "size": 3317,
           "extension": ".txt",
-          "modified": "2025-06-10T13:13:23.922450"
+          "modified": "2025-06-10T14:26:05.526754"
         },
         {
           "name": "test_analyzer.py",
@@ -482,7 +512,7 @@
           "name": "run_comprehensive_test.py",
           "size": 15724,
           "extension": ".py",
-          "modified": "2025-06-10T13:37:33.701497"
+          "modified": "2025-06-10T13:50:39.571825"
         },
         {
           "name": "test_step2_field_mapping.py",
@@ -509,6 +539,12 @@
           "modified": "2025-06-08T09:16:38.202725"
         },
         {
+          "name": "test_results.json",
+          "size": 5122,
+          "extension": ".json",
+          "modified": "2025-06-10T14:26:05.528754"
+        },
+        {
           "name": "continuous_new.log",
           "size": 3836,
           "extension": ".log",
@@ -530,7 +566,7 @@
           "name": "daily_match_counter.json",
           "size": 36,
           "extension": ".json",
-          "modified": "2025-06-10T13:43:25.058681"
+          "modified": "2025-06-10T14:55:51.703473"
         },
         {
           "name": "verify_filtering.py",
@@ -546,9 +582,9 @@
         },
         {
           "name": "step2.json",
-          "size": 103238,
+          "size": 146892,
           "extension": ".json",
-          "modified": "2025-06-10T13:43:28.372681"
+          "modified": "2025-06-10T14:55:56.543474"
         }
       ]
     },
@@ -4091,7 +4127,7 @@
           "name": "data_flow_analyzer.cpython-312.pyc",
           "size": 38554,
           "extension": ".pyc",
-          "modified": "2025-06-10T13:38:59.267577"
+          "modified": "2025-06-10T14:24:31.087729"
         },
         {
           "name": "step7.cpython-312.pyc",
@@ -21225,19 +21261,19 @@
           "name": "FETCH_HEAD",
           "size": 385,
           "extension": "",
-          "modified": "2025-06-10T13:05:44.780039"
+          "modified": "2025-06-10T14:15:12.097769"
         },
         {
           "name": "config",
-          "size": 975,
+          "size": 1098,
           "extension": "",
-          "modified": "2025-06-08T17:29:39.828295"
+          "modified": "2025-06-10T13:59:50.581146"
         },
         {
           "name": "index",
-          "size": 5074,
+          "size": 7166,
           "extension": "",
-          "modified": "2025-06-08T20:24:45.721202"
+          "modified": "2025-06-10T13:53:43.652921"
         },
         {
           "name": "ORIG_HEAD",
@@ -21265,9 +21301,9 @@
         },
         {
           "name": "COMMIT_EDITMSG",
-          "size": 571,
+          "size": 653,
           "extension": "",
-          "modified": "2025-06-08T20:24:45.721202"
+          "modified": "2025-06-10T13:53:43.654921"
         }
       ]
     },
@@ -21340,16 +21376,28 @@
           "name": "STEP127-UNIFIED-LOGGING",
           "size": 41,
           "extension": "",
-          "modified": "2025-06-08T20:24:45.722202"
+          "modified": "2025-06-10T13:53:43.655921"
         }
       ]
     },
     ".git/refs/remotes": {
       "directories": [
+        "devinai",
         "origin",
         "upstream"
       ],
       "files": []
+    },
+    ".git/refs/remotes/devinai": {
+      "directories": [],
+      "files": [
+        {
+          "name": "main",
+          "size": 41,
+          "extension": "",
+          "modified": "2025-06-10T14:00:41.721179"
+        }
+      ]
     },
     ".git/refs/remotes/origin": {
       "directories": [],
@@ -22185,6 +22233,12 @@
           "modified": "2025-06-08T09:16:06.600721"
         },
         {
+          "name": "087eb6c77af7edbf40fc4a9cb934951888df42",
+          "size": 116,
+          "extension": "",
+          "modified": "2025-06-10T13:53:43.645921"
+        },
+        {
           "name": "061f5b39081f39e9f4fa2a0e88aec0e0a3da79",
           "size": 1373,
           "extension": "",
@@ -22482,7 +22536,7 @@
           "name": "pack-7ba7dd58cecd0614d2449dc728ee60127fccf869.pack",
           "size": 13896392,
           "extension": ".pack",
-          "modified": "2025-06-09T16:57:46.289728"
+          "modified": "2025-06-10T13:53:21.820909"
         },
         {
           "name": "pack-7ba7dd58cecd0614d2449dc728ee60127fccf869.idx",
@@ -23114,6 +23168,12 @@
           "modified": "2025-06-08T09:16:06.702721"
         },
         {
+          "name": "64cf61b54dd453b5ae50e79c4ae0faeb4d0e54",
+          "size": 488,
+          "extension": "",
+          "modified": "2025-06-10T13:53:43.655921"
+        },
+        {
           "name": "be97e6665356327814e2b797ffcc5724974a46",
           "size": 5086,
           "extension": "",
@@ -23697,6 +23757,12 @@
           "modified": "2025-06-08T09:16:06.885721"
         },
         {
+          "name": "b5cbb4af82d47cfd376397653c2fa1bd854954",
+          "size": 55,
+          "extension": "",
+          "modified": "2025-06-10T13:53:43.645921"
+        },
+        {
           "name": "6d026dd982ed32012a7f677ec4451ef417d5d7",
           "size": 576,
           "extension": "",
@@ -23913,6 +23979,12 @@
           "modified": "2025-06-08T09:16:06.796721"
         },
         {
+          "name": "018e68db4da11bf13b6754a31f2c3fe8735c05",
+          "size": 2634,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.853909"
+        },
+        {
           "name": "e89cef706adc0d08fc4de5625a495e4003798e",
           "size": 94,
           "extension": "",
@@ -23996,6 +24068,12 @@
           "modified": "2025-06-08T09:16:07.026721"
         },
         {
+          "name": "176146b80f0604e74300f319f19db147037dda",
+          "size": 134,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.131909"
+        },
+        {
           "name": "9fb8aa5a9426c18157253aad4b0168084eeb1a",
           "size": 4331,
           "extension": "",
@@ -24035,6 +24113,12 @@
           "size": 757,
           "extension": "",
           "modified": "2025-06-08T09:16:06.846721"
+        },
+        {
+          "name": "b03082da389724169f48e22cfa082a457bd899",
+          "size": 11932,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.733909"
         },
         {
           "name": "bd1a994f8e3211797a7f0920bdc5781d09d410",
@@ -25145,6 +25229,12 @@
           "modified": "2025-06-08T09:16:06.474721"
         },
         {
+          "name": "2d591e696da28f3f79caa3a8d2be6c3aa83cda",
+          "size": 20343,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.732909"
+        },
+        {
           "name": "366c6098c49ecd546e1cc1538919e1414a3aee",
           "size": 1381,
           "extension": "",
@@ -25527,6 +25617,12 @@
           "modified": "2025-06-08T09:16:06.832721"
         },
         {
+          "name": "2783eadd92dc1de193ea685911056a6b42567f",
+          "size": 650,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.846909"
+        },
+        {
           "name": "8fbd88a9b6250f098e63e8ebf79c656cd84fac",
           "size": 1304,
           "extension": "",
@@ -25707,6 +25803,12 @@
           "size": 576,
           "extension": "",
           "modified": "2025-06-08T09:15:06.133713"
+        },
+        {
+          "name": "55d0877a50542fd045dba5c6ef4c6efe3f4d2a",
+          "size": 72176,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.852909"
         }
       ]
     },
@@ -25866,6 +25968,12 @@
           "size": 838,
           "extension": "",
           "modified": "2025-06-08T09:04:52.534636"
+        },
+        {
+          "name": "37d5099068dcc922271db3075639d4ed3991c3",
+          "size": 1287,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.129909"
         }
       ]
     },
@@ -26227,6 +26335,12 @@
           "modified": "2025-06-08T09:16:06.712721"
         },
         {
+          "name": "fefd0d5477c46389b6d6b43a157d5e14501e60",
+          "size": 488,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.727909"
+        },
+        {
           "name": "9ebc36718e2c62d8ebf4d5889cae166680e8c5",
           "size": 11207,
           "extension": "",
@@ -26295,6 +26409,12 @@
           "size": 129,
           "extension": "",
           "modified": "2025-06-08T09:16:06.850721"
+        },
+        {
+          "name": "16cb74b24288f21df768f147e22d205e909547",
+          "size": 353,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.129909"
         },
         {
           "name": "15db2540dbf093bbbca612af0b5fa3d12dacf0",
@@ -26605,6 +26725,12 @@
           "size": 193,
           "extension": "",
           "modified": "2025-06-08T09:16:07.010721"
+        },
+        {
+          "name": "31375fc26d6e41ce3482ab0e9fba34d66bd369",
+          "size": 1277257,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.124909"
         },
         {
           "name": "bdfbfa7a720b49e1a09b76f5713601d0cb2ad1",
@@ -27051,6 +27177,12 @@
           "size": 49,
           "extension": "",
           "modified": "2025-06-08T09:16:06.875721"
+        },
+        {
+          "name": "5899dbb3d5d63df8136db8b13fe004e8b08c1d",
+          "size": 3824,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.129909"
         },
         {
           "name": "3ea3d919363f08ab03edbc85b6099bc4df5647",
@@ -27578,6 +27710,12 @@
           "modified": "2025-06-08T09:16:07.025721"
         },
         {
+          "name": "0d1c773a6360467c9253124555dbee50a71004",
+          "size": 247,
+          "extension": "",
+          "modified": "2025-06-10T13:53:43.645921"
+        },
+        {
           "name": "2f79c6b3f50f6bf5626df6418d733612776d46",
           "size": 5963,
           "extension": "",
@@ -27670,6 +27808,12 @@
           "size": 6243,
           "extension": "",
           "modified": "2025-06-08T09:16:06.378721"
+        },
+        {
+          "name": "6678edc90fd7af94af0a202781f0ee7f4bfe67",
+          "size": 7722,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.846909"
         },
         {
           "name": "4c631ba11786bceebd22591f91bd378d8b232c",
@@ -28187,6 +28331,12 @@
           "modified": "2025-06-08T09:16:06.596721"
         },
         {
+          "name": "1b9cf23cfffe1b4f5701b2f97628c14641ddb1",
+          "size": 86,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.727909"
+        },
+        {
           "name": "029b770cd87a12086e70b1be9900c93d255f0b",
           "size": 863,
           "extension": "",
@@ -28320,6 +28470,12 @@
           "size": 625,
           "extension": "",
           "modified": "2025-06-08T09:16:06.636721"
+        },
+        {
+          "name": "532c5b473b8cf2f0cf90cfeb89e241821b7fb8",
+          "size": 835,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.130909"
         }
       ]
     },
@@ -28676,6 +28832,12 @@
           "modified": "2025-06-08T09:16:06.353721"
         },
         {
+          "name": "a955783495564f84460cecb4fc7deeaecbcfc0",
+          "size": 2452,
+          "extension": "",
+          "modified": "2025-06-10T13:53:43.648921"
+        },
+        {
           "name": "fc2a5fc9556a533714fc96a5bb13ef3571edd6",
           "size": 244,
           "extension": "",
@@ -28775,6 +28937,12 @@
     ".git/objects/04": {
       "directories": [],
       "files": [
+        {
+          "name": "ca3e5986ad1b5b0e346e6ac5f925b0e4700f48",
+          "size": 158824,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.845909"
+        },
         {
           "name": "2dac813e74b8187c3754cb9a937c7f7183e331",
           "size": 783,
@@ -28928,6 +29096,12 @@
     ".git/objects/e5": {
       "directories": [],
       "files": [
+        {
+          "name": "83140ed922c1b34168ad2680cb2376ff30c28c",
+          "size": 471,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.130909"
+        },
         {
           "name": "92a68e53f6215de9e1d1ac61ce062a333283c0",
           "size": 321,
@@ -29813,6 +29987,12 @@
           "modified": "2025-06-08T09:16:07.014721"
         },
         {
+          "name": "734fef1a229897d1af917e37b390b2b001b2d5",
+          "size": 51,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.727909"
+        },
+        {
           "name": "f13b15a7026a961a6eb981867ddc2e53edd125",
           "size": 51,
           "extension": "",
@@ -30057,6 +30237,12 @@
           "size": 51,
           "extension": "",
           "modified": "2025-06-08T09:13:03.953698"
+        },
+        {
+          "name": "d2b3e6840fe6911d40dd1662d550b52c5a43d1",
+          "size": 198,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.130909"
         },
         {
           "name": "01cf5d3a372da67d241dafe83ba756e015eafa",
@@ -30433,6 +30619,12 @@
           "size": 1521,
           "extension": "",
           "modified": "2025-06-08T13:45:50.914651"
+        },
+        {
+          "name": "0edcb70c21d63fbf6490b218d53961d4c5a80f",
+          "size": 20777,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.128909"
         },
         {
           "name": "b985d88983c4792e1f8974746dcb84548cb65e",
@@ -30920,6 +31112,12 @@
           "size": 313,
           "extension": "",
           "modified": "2025-06-08T09:16:06.871721"
+        },
+        {
+          "name": "d0ea69debffff1c48154ef455eef8cbff54afb",
+          "size": 1360,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.853909"
         },
         {
           "name": "de456f16ab549627b284a39e2265cbdb4ad8e9",
@@ -31460,6 +31658,12 @@
           "size": 26378,
           "extension": "",
           "modified": "2025-06-08T09:16:06.801721"
+        },
+        {
+          "name": "15ccdc2b5a3bc289008b226d123008a6a0e3f7",
+          "size": 4204,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.852909"
         }
       ]
     },
@@ -31765,6 +31969,12 @@
           "size": 236,
           "extension": "",
           "modified": "2025-06-08T09:16:06.871721"
+        },
+        {
+          "name": "a8ea192d3b80389f7f9e4beff6d05bcc30a883",
+          "size": 905,
+          "extension": "",
+          "modified": "2025-06-10T13:53:22.130909"
         },
         {
           "name": "e64100a10d5dcb37d87502ba1a5035204bf180",
@@ -32454,6 +32664,12 @@
           "size": 5959,
           "extension": "",
           "modified": "2025-06-08T09:16:06.794721"
+        },
+        {
+          "name": "ad1e096aa4f3eea3ce0a6ad3f0e3d0caa051ae",
+          "size": 3356,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.728909"
         },
         {
           "name": "65c0e8d31cb1d59935878af29baac722f45936",
@@ -33459,6 +33675,12 @@
           "modified": "2025-06-08T09:16:06.710721"
         },
         {
+          "name": "0187627bebb34c78ef583c6e1454ab352e126c",
+          "size": 4692,
+          "extension": "",
+          "modified": "2025-06-10T13:53:21.734909"
+        },
+        {
           "name": "07ff405caa9cfcad90da96713a0477cd9a1608",
           "size": 5159,
           "extension": "",
@@ -33573,9 +33795,9 @@
       "files": [
         {
           "name": "HEAD",
-          "size": 5413,
+          "size": 5650,
           "extension": "",
-          "modified": "2025-06-08T20:24:45.722202"
+          "modified": "2025-06-10T13:53:43.655921"
         }
       ]
     },
@@ -33622,9 +33844,9 @@
         },
         {
           "name": "STEP127-UNIFIED-LOGGING",
-          "size": 3485,
+          "size": 3722,
           "extension": "",
-          "modified": "2025-06-08T20:24:45.722202"
+          "modified": "2025-06-10T13:53:43.655921"
         },
         {
           "name": "main",
@@ -33636,10 +33858,22 @@
     },
     ".git/logs/refs/remotes": {
       "directories": [
+        "devinai",
         "origin",
         "upstream"
       ],
       "files": []
+    },
+    ".git/logs/refs/remotes/devinai": {
+      "directories": [],
+      "files": [
+        {
+          "name": "main",
+          "size": 163,
+          "extension": "",
+          "modified": "2025-06-10T14:00:41.722179"
+        }
+      ]
     },
     ".git/logs/refs/remotes/origin": {
       "directories": [],
@@ -34003,6 +34237,20 @@
       "function_calls": [],
       "file_operations": []
     },
+    "show_logic_map.py": {
+      "imports": [
+        "json"
+      ],
+      "from_imports": [
+        {
+          "module": "pathlib",
+          "items": "Path"
+        }
+      ],
+      "local_imports": [],
+      "function_calls": [],
+      "file_operations": []
+    },
     "step2_field_paths_reference.py": {
       "imports": [],
       "from_imports": [],
@@ -34042,6 +34290,23 @@
       "function_calls": [],
       "file_operations": []
     },
+    "devin_startup_guide.py": {
+      "imports": [
+        "os",
+        "subprocess",
+        "time",
+        "sys"
+      ],
+      "from_imports": [
+        {
+          "module": "pathlib",
+          "items": "Path"
+        }
+      ],
+      "local_imports": [],
+      "function_calls": [],
+      "file_operations": []
+    },
     "auto_logger.py": {
       "imports": [
         "sys",
@@ -34055,6 +34320,24 @@
         {
           "module": "user_interaction_logger",
           "items": "UserInteractionLogger"
+        }
+      ],
+      "local_imports": [],
+      "function_calls": [],
+      "file_operations": []
+    },
+    "devin_setup.py": {
+      "imports": [
+        "json",
+        "os",
+        "platform",
+        "sqlite3",
+        "urllib.request"
+      ],
+      "from_imports": [
+        {
+          "module": "typing",
+          "items": "Dict, List"
         }
       ],
       "local_imports": [],
@@ -34323,12 +34606,12 @@
         }
       ],
       "local_imports": [
-        "step2",
-        "step7"
+        "step7",
+        "step2"
       ],
       "function_calls": [
-        "step2.run_step2",
-        "step7.run_step7"
+        "step7.run_step7",
+        "step2.run_step2"
       ],
       "file_operations": []
     },
@@ -34385,12 +34668,12 @@
         }
       ],
       "local_imports": [
-        "step2",
-        "step7"
+        "step7",
+        "step2"
       ],
       "function_calls": [
-        "step2.run_step2",
-        "step7.run_step7"
+        "step7.run_step7",
+        "step2.run_step2"
       ],
       "file_operations": []
     },
@@ -36062,7 +36345,7 @@
         "keys": {
           "timestamp": {
             "type": "str",
-            "value": "2025-06-10T09:43:25.059717-04:00"
+            "value": "2025-06-10T10:55:51.704417-04:00"
           },
           "live_matches": {
             "type": "dict",
@@ -36073,7 +36356,7 @@
               },
               "results": {
                 "type": "list",
-                "length": 29,
+                "length": 31,
                 "sample_element": "max_depth_reached"
               }
             },
@@ -36082,7 +36365,7 @@
           "match_details": {
             "type": "dict",
             "keys": {
-              "4wyrn4h6ez63q86": {
+              "y0or5jh84x9jqwz": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36091,7 +36374,7 @@
                 },
                 "total_keys": 3
               },
-              "8yomo4h3l228q0j": {
+              "ednm9whwky2wryo": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36100,7 +36383,7 @@
                 },
                 "total_keys": 3
               },
-              "x7lm7phzy006m2w": {
+              "965mkyhk7d28r1g": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36109,7 +36392,7 @@
                 },
                 "total_keys": 3
               },
-              "dn1m1ghlevlymoe": {
+              "vjxm8ghe461kr6o": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36118,7 +36401,7 @@
                 },
                 "total_keys": 3
               },
-              "3glrw7h72nwpqdy": {
+              "y39mp1hzx2j5moj": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36127,7 +36410,7 @@
                 },
                 "total_keys": 3
               },
-              "y0or5jhny8lkqwz": {
+              "jw2r09hkn47drz8": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36136,7 +36419,7 @@
                 },
                 "total_keys": 3
               },
-              "y39mp1h65vo2moj": {
+              "l7oqdehg6ydkr51": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36145,7 +36428,7 @@
                 },
                 "total_keys": 3
               },
-              "dj2ryohlyv9nq1z": {
+              "dj2ryohlyv56q1z": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36154,7 +36437,7 @@
                 },
                 "total_keys": 3
               },
-              "pxwrxlhy1p0eryk": {
+              "4jwq2ghn4yzem0v": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36163,7 +36446,7 @@
                 },
                 "total_keys": 3
               },
-              "1l4rjnh48wz8m7v": {
+              "pxwrxlh5x6x5ryk": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36173,12 +36456,12 @@
                 "total_keys": 3
               }
             },
-            "total_keys": 29
+            "total_keys": 31
           },
           "match_odds": {
             "type": "dict",
             "keys": {
-              "4wyrn4h6ez63q86": {
+              "y0or5jh84x9jqwz": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36186,7 +36469,7 @@
                 },
                 "total_keys": 2
               },
-              "8yomo4h3l228q0j": {
+              "ednm9whwky2wryo": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36194,7 +36477,7 @@
                 },
                 "total_keys": 2
               },
-              "x7lm7phzy006m2w": {
+              "965mkyhk7d28r1g": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36202,7 +36485,7 @@
                 },
                 "total_keys": 2
               },
-              "dn1m1ghlevlymoe": {
+              "vjxm8ghe461kr6o": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36210,7 +36493,7 @@
                 },
                 "total_keys": 2
               },
-              "3glrw7h72nwpqdy": {
+              "y39mp1hzx2j5moj": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36218,7 +36501,7 @@
                 },
                 "total_keys": 2
               },
-              "y0or5jhny8lkqwz": {
+              "jw2r09hkn47drz8": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36226,7 +36509,7 @@
                 },
                 "total_keys": 2
               },
-              "y39mp1h65vo2moj": {
+              "l7oqdehg6ydkr51": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36234,7 +36517,7 @@
                 },
                 "total_keys": 2
               },
-              "dj2ryohlyv9nq1z": {
+              "dj2ryohlyv56q1z": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36242,7 +36525,7 @@
                 },
                 "total_keys": 2
               },
-              "pxwrxlhy1p0eryk": {
+              "4jwq2ghn4yzem0v": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36250,7 +36533,7 @@
                 },
                 "total_keys": 2
               },
-              "1l4rjnh48wz8m7v": {
+              "pxwrxlh5x6x5ryk": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36259,12 +36542,12 @@
                 "total_keys": 2
               }
             },
-            "total_keys": 29
+            "total_keys": 31
           },
           "team_info": {
             "type": "dict",
             "keys": {
-              "dn1m1gh406emoep": {
+              "318q66hk2k3qo9j": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36273,7 +36556,7 @@
                 },
                 "total_keys": 3
               },
-              "8y39mp1h298mojx": {
+              "3glrw7h1w9kqdyj": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36282,7 +36565,7 @@
                 },
                 "total_keys": 3
               },
-              "965mkyh73wer1ge": {
+              "4zp5rzgh908q82w": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36291,43 +36574,7 @@
                 },
                 "total_keys": 3
               },
-              "6ypq3nh5z1ymd7o": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "zp5rzghj769q82w": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "l7oqdeh1249r510": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "x7lm7phkkjnm2wd": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "j1l4rjnhonjm7vx": {
+              "n54qllhxy4wqvy9": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36345,7 +36592,43 @@
                 },
                 "total_keys": 3
               },
-              "x7lm7ph9p80m2wd": {
+              "23xmvkhd8noqg8n": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "318q66ho0neqo9j": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "6ypq3nh5z1ymd7o": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "n54qllh21kgqvy9": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "pxwrxlhz2vgryk0": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36355,12 +36638,21 @@
                 "total_keys": 3
               }
             },
-            "total_keys": 58
+            "total_keys": 62
           },
           "competition_info": {
             "type": "dict",
             "keys": {
-              "z318q66hegqo9jd": {
+              "yl5ergphvnlr8k0": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "kn54qllh2jwqvy9": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36378,42 +36670,6 @@
                 },
                 "total_keys": 3
               },
-              "56ypq3nh3pxmd7o": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "9dn1m1ghojmoepl": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "gpxwrxlh5wpryk0": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
-              "yl5ergphvnlr8k0": {
-                "type": "dict",
-                "keys": {
-                  "code": "max_depth_reached",
-                  "query": "max_depth_reached",
-                  "results": "max_depth_reached"
-                },
-                "total_keys": 3
-              },
               "jednm9whk0ryox8": {
                 "type": "dict",
                 "keys": {
@@ -36423,7 +36679,7 @@
                 },
                 "total_keys": 3
               },
-              "d23xmvkh42eqg8n": {
+              "z318q66hegqo9jd": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36432,7 +36688,7 @@
                 },
                 "total_keys": 3
               },
-              "56ypq3nhzwdmd7o": {
+              "yl5ergph72r8k0o": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36441,7 +36697,34 @@
                 },
                 "total_keys": 3
               },
-              "29dn1m1ghxmoepl": {
+              "z8yomo4hg9q0j6l": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "jednm9whz91ryox": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "56ypq3nh3pxmd7o": {
+                "type": "dict",
+                "keys": {
+                  "code": "max_depth_reached",
+                  "query": "max_depth_reached",
+                  "results": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "0gx7lm7ph0m2wdk": {
                 "type": "dict",
                 "keys": {
                   "code": "max_depth_reached",
@@ -36470,18 +36753,18 @@
           },
           "ny_timestamp": {
             "type": "str",
-            "value": "06/10/2025 09:43:27 AM EST"
+            "value": "06/10/2025 10:55:54 AM EST"
           },
           "unified_status_summary": {
             "type": "dict",
             "keys": {
               "total_matches_fetched": {
                 "type": "int",
-                "value": "29"
+                "value": "31"
               },
               "matches_with_status": {
                 "type": "int",
-                "value": "29"
+                "value": "31"
               },
               "matches_without_status": {
                 "type": "int",
@@ -36489,34 +36772,36 @@
               },
               "in_play_matches": {
                 "type": "int",
-                "value": "17"
+                "value": "15"
               },
               "status_breakdown": {
                 "type": "dict",
                 "keys": {
                   "status_2": "max_depth_reached",
+                  "status_3": "max_depth_reached",
                   "status_4": "max_depth_reached",
                   "status_8": "max_depth_reached",
                   "status_9": "max_depth_reached",
                   "status_13": "max_depth_reached"
                 },
-                "total_keys": 5
+                "total_keys": 6
               },
               "formatted_summary": {
                 "type": "list",
-                "length": 6,
+                "length": 7,
                 "sample_element": "max_depth_reached"
               },
               "status_counts": {
                 "type": "dict",
                 "keys": {
                   "First half": "max_depth_reached",
-                  "Delay": "max_depth_reached",
-                  "Second half": "max_depth_reached",
                   "To be determined": "max_depth_reached",
+                  "Half-time": "max_depth_reached",
+                  "Second half": "max_depth_reached",
+                  "Delay": "max_depth_reached",
                   "End": "max_depth_reached"
                 },
-                "total_keys": 5
+                "total_keys": 6
               }
             },
             "total_keys": 7
@@ -36533,7 +36818,16 @@
                 },
                 "total_keys": 3
               },
-              "Delay": {
+              "To be determined": {
+                "type": "dict",
+                "keys": {
+                  "status_id": "max_depth_reached",
+                  "count": "max_depth_reached",
+                  "match_ids": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "Half-time": {
                 "type": "dict",
                 "keys": {
                   "status_id": "max_depth_reached",
@@ -36551,7 +36845,7 @@
                 },
                 "total_keys": 3
               },
-              "To be determined": {
+              "Delay": {
                 "type": "dict",
                 "keys": {
                   "status_id": "max_depth_reached",
@@ -36570,12 +36864,12 @@
                 "total_keys": 3
               }
             },
-            "total_keys": 5
+            "total_keys": 6
           }
         },
         "total_keys": 11
       },
-      "size_kb": 10019
+      "size_kb": 17308
     },
     "api_test_results_20250606_160811.json": {
       "type": "json_data",
@@ -36644,7 +36938,7 @@
         "keys": {
           "timestamp": {
             "type": "str",
-            "value": "2025-06-10T13:13:21.955456"
+            "value": "2025-06-10T14:24:31.134475"
           },
           "project_structure": {
             "type": "dict",
@@ -36730,7 +37024,7 @@
                 "total_keys": 2
               }
             },
-            "total_keys": 589
+            "total_keys": 591
           },
           "file_dependencies": {
             "type": "dict",
@@ -36846,7 +37140,7 @@
                 "total_keys": 5
               }
             },
-            "total_keys": 28
+            "total_keys": 31
           },
           "data_flow_maps": {
             "type": "dict",
@@ -36942,7 +37236,7 @@
                 "total_keys": 3
               }
             },
-            "total_keys": 29
+            "total_keys": 32
           },
           "function_mappings": {
             "type": "dict",
@@ -36995,7 +37289,7 @@
                 "length": 0
               }
             },
-            "total_keys": 28
+            "total_keys": 31
           },
           "api_endpoints": {
             "type": "dict",
@@ -37101,7 +37395,7 @@
                 "total_keys": 4
               }
             },
-            "total_keys": 28
+            "total_keys": 31
           },
           "file_io_operations": {
             "type": "dict",
@@ -37197,7 +37491,7 @@
                 "total_keys": 3
               }
             },
-            "total_keys": 28
+            "total_keys": 31
           },
           "logging_flows": {
             "type": "dict",
@@ -37247,6 +37541,15 @@
                 },
                 "total_keys": 3
               },
+              "show_logic_map.py": {
+                "type": "dict",
+                "keys": {
+                  "type": "max_depth_reached",
+                  "logging_calls": "max_depth_reached",
+                  "log_files": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
               "auto_logger.py": {
                 "type": "dict",
                 "keys": {
@@ -37282,23 +37585,23 @@
                   "log_files": "max_depth_reached"
                 },
                 "total_keys": 3
-              },
-              "step2.py": {
-                "type": "dict",
-                "keys": {
-                  "type": "max_depth_reached",
-                  "logging_calls": "max_depth_reached",
-                  "log_files": "max_depth_reached"
-                },
-                "total_keys": 3
               }
             },
-            "total_keys": 11
+            "total_keys": 13
           },
           "process_interactions": {
             "type": "dict",
             "keys": {
               "start.sh": {
+                "type": "dict",
+                "keys": {
+                  "type": "max_depth_reached",
+                  "commands": "max_depth_reached",
+                  "python_calls": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "start_ssh_monitor.sh": {
                 "type": "dict",
                 "keys": {
                   "type": "max_depth_reached",
@@ -37315,9 +37618,18 @@
                   "os_system_calls": "max_depth_reached"
                 },
                 "total_keys": 3
+              },
+              "run_comprehensive_test.py": {
+                "type": "dict",
+                "keys": {
+                  "type": "max_depth_reached",
+                  "subprocess_calls": "max_depth_reached",
+                  "os_system_calls": "max_depth_reached"
+                },
+                "total_keys": 3
               }
             },
-            "total_keys": 2
+            "total_keys": 4
           },
           "ssh_configurations": {
             "type": "dict",
@@ -37352,6 +37664,26 @@
                 },
                 "total_keys": 4
               },
+              "devin_setup.py": {
+                "type": "dict",
+                "keys": {
+                  "type": "max_depth_reached",
+                  "network_imports": "max_depth_reached",
+                  "ssh_calls": "max_depth_reached",
+                  "socket_calls": "max_depth_reached"
+                },
+                "total_keys": 4
+              },
+              "data_flow_analyzer.py": {
+                "type": "dict",
+                "keys": {
+                  "type": "max_depth_reached",
+                  "network_imports": "max_depth_reached",
+                  "ssh_calls": "max_depth_reached",
+                  "socket_calls": "max_depth_reached"
+                },
+                "total_keys": 4
+              },
               "step1.py": {
                 "type": "dict",
                 "keys": {
@@ -37363,12 +37695,12 @@
                 "total_keys": 4
               }
             },
-            "total_keys": 4
+            "total_keys": 6
           }
         },
-        "total_keys": 11
+        "total_keys": 13
       },
-      "size_kb": 1113
+      "size_kb": 1175
     },
     "step1_2025-06-07.json": {
       "type": "json_data",
@@ -37983,6 +38315,85 @@
       },
       "size_kb": 0
     },
+    "test_results.json": {
+      "type": "json_data",
+      "structure": {
+        "type": "dict",
+        "keys": {
+          "test_timestamp": {
+            "type": "str",
+            "value": "2025-06-10T14:26:05.530106"
+          },
+          "test_duration": {
+            "type": "str",
+            "value": "N/A"
+          },
+          "results": {
+            "type": "dict",
+            "keys": {
+              "initial_status": {
+                "type": "dict",
+                "keys": {
+                  "running": "max_depth_reached",
+                  "output": "max_depth_reached",
+                  "error": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "stop_result": {
+                "type": "dict",
+                "keys": {
+                  "success": "max_depth_reached",
+                  "output": "max_depth_reached",
+                  "error": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "verification": {
+                "type": "dict",
+                "keys": {
+                  "running": "max_depth_reached",
+                  "output": "max_depth_reached",
+                  "error": "max_depth_reached"
+                },
+                "total_keys": 3
+              },
+              "analysis_results": {
+                "type": "dict",
+                "keys": {
+                  "success": "max_depth_reached",
+                  "summary": "max_depth_reached"
+                },
+                "total_keys": 2
+              },
+              "protocol_tests": {
+                "type": "dict",
+                "keys": {
+                  "json_files": "max_depth_reached",
+                  "log_files": "max_depth_reached",
+                  "python_files": "max_depth_reached",
+                  "recently_modified": "max_depth_reached"
+                },
+                "total_keys": 4
+              },
+              "generated_files": {
+                "type": "dict",
+                "keys": {
+                  "data_flow_analysis.json": "max_depth_reached",
+                  "data_flow_summary.txt": "max_depth_reached",
+                  "data_flow_diagram.txt": "max_depth_reached",
+                  "ssh_monitor.log": "max_depth_reached"
+                },
+                "total_keys": 4
+              }
+            },
+            "total_keys": 6
+          }
+        },
+        "total_keys": 3
+      },
+      "size_kb": 5
+    },
     "daily_match_counter.json": {
       "type": "json_data",
       "structure": {
@@ -37994,7 +38405,7 @@
           },
           "count": {
             "type": "int",
-            "value": "575"
+            "value": "621"
           }
         },
         "total_keys": 2
@@ -38008,7 +38419,7 @@
         "keys": {
           "summaries": {
             "type": "list",
-            "length": 29,
+            "length": 31,
             "sample_element": {
               "type": "dict",
               "keys": {
@@ -38031,11 +38442,11 @@
             "keys": {
               "total_matches": {
                 "type": "int",
-                "value": "29"
+                "value": "31"
               },
               "timestamp": {
                 "type": "str",
-                "value": "06/10/2025 09:43:28 AM EDT"
+                "value": "06/10/2025 10:55:56 AM EDT"
               },
               "source": {
                 "type": "str",
@@ -38043,7 +38454,7 @@
               },
               "processing_time": {
                 "type": "str",
-                "value": "0.11 seconds"
+                "value": "0.23 seconds"
               }
             },
             "total_keys": 4
@@ -38053,7 +38464,7 @@
             "keys": {
               "processed_at": {
                 "type": "str",
-                "value": "06/10/2025 09:43:28 AM EDT"
+                "value": "06/10/2025 10:55:56 AM EDT"
               },
               "input_file": {
                 "type": "str",
@@ -38065,15 +38476,15 @@
               },
               "total_matches_processed": {
                 "type": "int",
-                "value": "29"
+                "value": "31"
               },
               "in_play_matches": {
                 "type": "int",
-                "value": "17"
+                "value": "15"
               },
               "processing_time": {
                 "type": "str",
-                "value": "0.11 seconds"
+                "value": "0.23 seconds"
               },
               "pipeline_timing": {
                 "type": "dict",
@@ -38090,17 +38501,17 @@
         },
         "total_keys": 3
       },
-      "size_kb": 100
+      "size_kb": 143
     },
     "step7_simple.log": {
       "type": "log_data",
       "patterns": {
-        "timestamps": 21,
+        "timestamps": 26,
         "error_levels": 0,
         "api_calls": 0,
-        "total_lines": 474
+        "total_lines": 592
       },
-      "size_kb": 19
+      "size_kb": 23
     },
     "step1.log": {
       "type": "log_data",
@@ -38115,22 +38526,22 @@
     "ssh_monitor.log": {
       "type": "log_data",
       "patterns": {
-        "timestamps": 5033035,
+        "timestamps": 7303909,
         "error_levels": 0,
         "api_calls": 0,
-        "total_lines": 5033045
+        "total_lines": 7303923
       },
-      "size_kb": 337580
+      "size_kb": 528588
     },
     "start.log": {
       "type": "log_data",
       "patterns": {
-        "timestamps": 1180,
-        "error_levels": 1094,
+        "timestamps": 1419,
+        "error_levels": 1315,
         "api_calls": 0,
-        "total_lines": 2060
+        "total_lines": 2498
       },
-      "size_kb": 120
+      "size_kb": 145
     },
     "user_interactions.log": {
       "type": "log_data",
@@ -38976,6 +39387,126 @@
         ]
       }
     ],
+    "show_logic_map.py": [
+      {
+        "name": "generate_logic_map",
+        "line": 10,
+        "args": [],
+        "docstring": "Generate a comprehensive logic and data flow map",
+        "calls": [
+          "Path",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "main_files.items",
+          "print",
+          "print",
+          "print",
+          "data.get",
+          "print",
+          "print",
+          "data.get",
+          "file_io.items",
+          "print",
+          "print",
+          "file_deps.keys",
+          "test_files.items",
+          "print",
+          "print",
+          "print",
+          "utility_files.items",
+          "print",
+          "print",
+          "print",
+          "data.get",
+          "data_flows.items",
+          "print",
+          "data.get",
+          "data.get",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "analysis_file.exists",
+          "print",
+          "open",
+          "json.load",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "print",
+          "deps.get",
+          "len",
+          "operations.get",
+          "operations.get",
+          "print",
+          "operations.get",
+          "operations.get",
+          "print",
+          "print",
+          "print",
+          "flow_info.get",
+          "print",
+          "step2_deps.get",
+          "step7_deps.get",
+          "print",
+          "print",
+          "filename.lower",
+          "filename.lower",
+          "flow_info.get",
+          "print",
+          "flow_info.get",
+          "flow_info.get",
+          "print",
+          "ssh_data.get",
+          "network_data.get",
+          "ssh_data.get",
+          "network_data.get",
+          "print",
+          "?.get",
+          "step1_deps.get",
+          "?.join",
+          "print",
+          "?.join",
+          "?.join",
+          "?.get",
+          "data.get"
+        ]
+      }
+    ],
     "step2_field_paths_reference.py": [
       {
         "name": "extract_summary_fields_paths",
@@ -39702,6 +40233,271 @@
         ]
       }
     ],
+    "devin_startup_guide.py": [
+      {
+        "name": "main",
+        "line": 243,
+        "args": [],
+        "docstring": "Main entry point",
+        "calls": [
+          "DevinStartupGuide",
+          "len",
+          "?.lower",
+          "guide.run_complete_setup",
+          "guide.check_project_status",
+          "guide.start_application",
+          "guide.run_tests",
+          "guide.show_project_overview",
+          "guide.show_usage_commands",
+          "print",
+          "print"
+        ]
+      },
+      {
+        "name": "__init__",
+        "line": 14,
+        "args": [
+          "self"
+        ],
+        "docstring": null,
+        "calls": [
+          "?.expanduser",
+          "Path.cwd",
+          "Path"
+        ]
+      },
+      {
+        "name": "print_header",
+        "line": 18,
+        "args": [
+          "self",
+          "title"
+        ],
+        "docstring": null,
+        "calls": [
+          "print",
+          "print",
+          "print"
+        ]
+      },
+      {
+        "name": "print_step",
+        "line": 23,
+        "args": [
+          "self",
+          "step_num",
+          "description"
+        ],
+        "docstring": null,
+        "calls": [
+          "print",
+          "print"
+        ]
+      },
+      {
+        "name": "run_command",
+        "line": 27,
+        "args": [
+          "self",
+          "command",
+          "description",
+          "check_output"
+        ],
+        "docstring": "Run a command and return result",
+        "calls": [
+          "print",
+          "subprocess.run",
+          "subprocess.run",
+          "print",
+          "print",
+          "print",
+          "?.strip",
+          "print",
+          "print",
+          "print",
+          "?.strip"
+        ]
+      },
+      {
+        "name": "check_directory",
+        "line": 53,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if we're in the right directory",
+        "calls": [
+          "self.print_step",
+          "?.exists",
+          "os.chdir",
+          "print",
+          "print",
+          "print",
+          "print"
+        ]
+      },
+      {
+        "name": "install_dependencies",
+        "line": 67,
+        "args": [
+          "self"
+        ],
+        "docstring": "Install required dependencies",
+        "calls": [
+          "self.print_step",
+          "self.run_command"
+        ]
+      },
+      {
+        "name": "check_project_status",
+        "line": 80,
+        "args": [
+          "self"
+        ],
+        "docstring": "Check if project is already running",
+        "calls": [
+          "self.print_step",
+          "self.run_command",
+          "print",
+          "print"
+        ]
+      },
+      {
+        "name": "start_application",
+        "line": 93,
+        "args": [
+          "self",
+          "with_ssh_monitoring"
+        ],
+        "docstring": "Start the application with or without SSH monitoring",
+        "calls": [
+          "self.print_step",
+          "print",
+          "self.run_command",
+          "print",
+          "self.run_command",
+          "time.sleep",
+          "self.verify_startup"
+        ]
+      },
+      {
+        "name": "verify_startup",
+        "line": 109,
+        "args": [
+          "self"
+        ],
+        "docstring": "Verify the application started successfully",
+        "calls": [
+          "self.print_step",
+          "self.run_command",
+          "print",
+          "print",
+          "?.exists",
+          "print",
+          "Path",
+          "?.stat",
+          "Path"
+        ]
+      },
+      {
+        "name": "run_tests",
+        "line": 130,
+        "args": [
+          "self"
+        ],
+        "docstring": "Run the comprehensive test suite",
+        "calls": [
+          "self.print_step",
+          "?.exists",
+          "print",
+          "self.run_command",
+          "print",
+          "Path"
+        ]
+      },
+      {
+        "name": "show_monitoring_info",
+        "line": 140,
+        "args": [
+          "self"
+        ],
+        "docstring": "Show monitoring and data flow information",
+        "calls": [
+          "self.print_step",
+          "?.exists",
+          "?.exists",
+          "self.run_command",
+          "print",
+          "print",
+          "print",
+          "Path",
+          "Path",
+          "log_output.split",
+          "line.strip",
+          "?.stat",
+          "?.stat",
+          "print",
+          "Path",
+          "Path",
+          "line.strip"
+        ]
+      },
+      {
+        "name": "show_usage_commands",
+        "line": 162,
+        "args": [
+          "self"
+        ],
+        "docstring": "Show key commands for Devin to use",
+        "calls": [
+          "self.print_step",
+          "commands.items",
+          "print"
+        ]
+      },
+      {
+        "name": "show_project_overview",
+        "line": 179,
+        "args": [
+          "self"
+        ],
+        "docstring": "Show project overview and capabilities",
+        "calls": [
+          "self.print_header",
+          "overview.items",
+          "print"
+        ]
+      },
+      {
+        "name": "run_complete_setup",
+        "line": 196,
+        "args": [
+          "self"
+        ],
+        "docstring": "Run the complete startup sequence",
+        "calls": [
+          "self.print_header",
+          "print",
+          "print",
+          "self.check_directory",
+          "self.install_dependencies",
+          "self.check_project_status",
+          "self.show_usage_commands",
+          "self.show_project_overview",
+          "self.start_application",
+          "self.run_tests",
+          "self.show_monitoring_info",
+          "self.print_header",
+          "print",
+          "print",
+          "print",
+          "self.print_header",
+          "print",
+          "print",
+          "print",
+          "self.start_application"
+        ]
+      }
+    ],
     "auto_logger.py": [
       {
         "name": "auto_log",
@@ -39716,6 +40512,171 @@
           "print",
           "print",
           "os.getenv"
+        ]
+      }
+    ],
+    "devin_setup.py": [
+      {
+        "name": "get_settings",
+        "line": 17,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "?.join",
+          "?.exists",
+          "?.read",
+          "open"
+        ]
+      },
+      {
+        "name": "get_keybindings",
+        "line": 24,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "?.join",
+          "platform.system",
+          "?.exists",
+          "?.read",
+          "?.read",
+          "ValueError",
+          "open",
+          "?.read",
+          "open",
+          "open"
+        ]
+      },
+      {
+        "name": "get_snippets",
+        "line": 40,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "?.join",
+          "os.listdir",
+          "?.exists",
+          "?.read",
+          "open",
+          "?.join"
+        ]
+      },
+      {
+        "name": "get_tasks",
+        "line": 50,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "?.join",
+          "?.exists",
+          "?.read",
+          "open"
+        ]
+      },
+      {
+        "name": "get_extensions",
+        "line": 57,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "?.expanduser",
+          "json.loads",
+          "list",
+          "?.exists",
+          "?.read",
+          "?.join",
+          "?.join",
+          "extension.get",
+          "manifest.get",
+          "metadata.get",
+          "results.values",
+          "?.exists",
+          "?.lower",
+          "open",
+          "json.load",
+          "display_name.startswith",
+          "display_name.endswith",
+          "?.join",
+          "?.exists",
+          "extension.get",
+          "metadata.get",
+          "metadata.get",
+          "metadata.get",
+          "?.lower",
+          "open",
+          "?.get",
+          "result.get",
+          "open",
+          "json.load",
+          "nls.get",
+          "display_name.strip"
+        ]
+      },
+      {
+        "name": "get_global_state",
+        "line": 109,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "?.join",
+          "sqlite3.connect",
+          "conn.cursor",
+          "cursor.execute",
+          "json.loads",
+          "targets.items",
+          "?.exists",
+          "cursor.fetchone",
+          "cursor.execute",
+          "cursor.fetchone"
+        ]
+      },
+      {
+        "name": "export",
+        "line": 131,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "get_settings",
+          "get_extensions",
+          "get_keybindings",
+          "get_snippets",
+          "get_tasks",
+          "get_global_state",
+          "os.getenv",
+          "?.Request",
+          "req.add_header",
+          "print",
+          "print",
+          "json.dumps",
+          "json.dumps",
+          "json.dumps",
+          "json.dumps",
+          "json.dumps",
+          "json.dumps",
+          "?.urlopen",
+          "?.decode",
+          "json.loads",
+          "?.encode",
+          "response.read",
+          "json.dumps"
+        ]
+      },
+      {
+        "name": "main",
+        "line": 170,
+        "args": [],
+        "docstring": null,
+        "calls": [
+          "print",
+          "platform.system",
+          "export",
+          "ValueError",
+          "?.expanduser",
+          "print",
+          "print",
+          "?.expanduser",
+          "?.expanduser",
+          "ValueError",
+          "ValueError"
         ]
       }
     ],
@@ -42557,6 +43518,12 @@
       "async_functions": [],
       "await_calls": []
     },
+    "show_logic_map.py": {
+      "urls": [],
+      "api_calls": [],
+      "async_functions": [],
+      "await_calls": []
+    },
     "step2_field_paths_reference.py": {
       "urls": [],
       "api_calls": [],
@@ -42569,8 +43536,23 @@
       "async_functions": [],
       "await_calls": []
     },
+    "devin_startup_guide.py": {
+      "urls": [],
+      "api_calls": [],
+      "async_functions": [],
+      "await_calls": []
+    },
     "auto_logger.py": {
       "urls": [],
+      "api_calls": [],
+      "async_functions": [],
+      "await_calls": []
+    },
+    "devin_setup.py": {
+      "urls": [
+        "\"https://api.devin.ai/vscode-profile/776c5576-074d-47de-ab62-3c92673c5886\"",
+        "\"https://app.devin.ai/vscode-profile/776c5576-074d-47de-ab62-3c92673c5886/confirm\""
+      ],
       "api_calls": [],
       "async_functions": [],
       "await_calls": []
@@ -42667,8 +43649,8 @@
         "enrich_match_data_async"
       ],
       "await_calls": [
-        "asyncio",
-        "resp"
+        "resp",
+        "asyncio"
       ]
     },
     "verify_filtering.py": {
@@ -42755,8 +43737,8 @@
         }
       ],
       "json_operations": [
-        "load",
-        "dump"
+        "dump",
+        "load"
       ]
     },
     "fix_step2_merge.py": {
@@ -42840,6 +43822,18 @@
         "dump"
       ]
     },
+    "show_logic_map.py": {
+      "read_operations": [
+        {
+          "operation": "open",
+          "file": ") as f:\n        data = json.load(f)\n    \n    print("
+        }
+      ],
+      "write_operations": [],
+      "json_operations": [
+        "load"
+      ]
+    },
     "step2_field_paths_reference.py": {
       "read_operations": [],
       "write_operations": [],
@@ -42861,10 +43855,32 @@
         "dump"
       ]
     },
+    "devin_startup_guide.py": {
+      "read_operations": [],
+      "write_operations": [],
+      "json_operations": []
+    },
     "auto_logger.py": {
       "read_operations": [],
       "write_operations": [],
       "json_operations": []
+    },
+    "devin_setup.py": {
+      "read_operations": [
+        {
+          "operation": "open",
+          "file": ") as f:\n            manifest = json.load(f)\n\n        metadata = extension.get("
+        },
+        {
+          "operation": "open",
+          "file": ") as f:\n                    nls = json.load(f)\n                    display_name = nls.get(display_name.strip("
+        }
+      ],
+      "write_operations": [],
+      "json_operations": [
+        "dump",
+        "load"
+      ]
     },
     "filter_odds_minutes.py": {
       "read_operations": [
@@ -42879,8 +43895,8 @@
       ],
       "write_operations": [],
       "json_operations": [
-        "load",
-        "dump"
+        "dump",
+        "load"
       ]
     },
     "step7.py": {
@@ -43096,8 +44112,8 @@
         }
       ],
       "json_operations": [
-        "load",
-        "dump"
+        "dump",
+        "load"
       ]
     },
     "oddsconfig.py": {
@@ -43355,8 +44371,8 @@
       ],
       "write_operations": [],
       "json_operations": [
-        "load",
-        "dump"
+        "dump",
+        "load"
       ]
     },
     "verify_filtering.py": {
@@ -43399,8 +44415,8 @@
         "logger.log_interaction"
       ],
       "log_files": [
-        ".log",
-        "user_interactions.log"
+        "user_interactions.log",
+        ".log"
       ]
     },
     "log_interaction.py": {
@@ -43414,6 +44430,25 @@
         "user_interactions.log"
       ]
     },
+    "show_logic_map.py": {
+      "type": "usage",
+      "logging_calls": [],
+      "log_files": [
+        "   \ud83d\udcdd Writes: step7_matches.log",
+        "   \ud83d\udcdd Writes: step1.json, step1.log",
+        "4. step7.py \u2192 reads step2.json \u2192 filters matches \u2192 writes step7_matches.log"
+      ]
+    },
+    "devin_startup_guide.py": {
+      "type": "usage",
+      "logging_calls": [],
+      "log_files": [
+        "tail -f ssh_monitor.log",
+        "tail -5 start.log",
+        "ssh_monitor.log",
+        "step7_simple.log"
+      ]
+    },
     "auto_logger.py": {
       "type": "usage",
       "logging_calls": [
@@ -43424,24 +44459,24 @@
     "filter_odds_minutes.py": {
       "type": "usage",
       "logging_calls": [
+        "logging.basicConfig",
         "logging.getLogger",
-        "logger.error",
         "logger.info",
-        "logging.basicConfig"
+        "logger.error"
       ],
       "log_files": []
     },
     "step7.py": {
       "type": "usage",
       "logging_calls": [
-        "logging.getLogger",
-        "logger.error",
+        "logger.info",
         "logging.Formatter",
-        "logging.FileHandler",
+        "logger.error",
         "logging.StreamHandler",
         "logger.setLevel",
-        "logger.info",
-        "logger.addHandler"
+        "logging.FileHandler",
+        "logger.addHandler",
+        "logging.getLogger"
       ],
       "log_files": [
         "step7_simple.log"
@@ -43457,10 +44492,10 @@
     "step2.py": {
       "type": "usage",
       "logging_calls": [
+        "logging.basicConfig",
         "logging.getLogger",
         "logger.error",
-        "logger.info",
-        "logging.basicConfig"
+        "logger.info"
       ],
       "log_files": []
     },
@@ -43468,19 +44503,19 @@
       "type": "usage",
       "logging_calls": [],
       "log_files": [
-        "*.log",
-        "ssh_monitor.log"
+        "ssh_monitor.log",
+        "*.log"
       ]
     },
     "step1.py": {
       "type": "usage",
       "logging_calls": [
-        "logging.getLogger",
-        "logger.error",
-        "logger.warning",
         "logging.basicConfig",
+        "logger.info",
+        "logger.error",
         "logging.StreamHandler",
-        "logger.info"
+        "logger.warning",
+        "logging.getLogger"
       ],
       "log_files": [
         "step1.log"
@@ -43491,97 +44526,106 @@
     "start.sh": {
       "type": "shell_script",
       "commands": [
-        "print_warning",
-        "RED",
-        "PID",
-        "REQUIRED_PACKAGES",
-        "status",
-        "GREEN",
-        "PIP_BIN",
-        "exit",
-        "print_error",
-        "else",
-        "show_logs",
-        "SCRIPT_DIR",
         "source",
-        "start",
-        "tail",
-        "import_name",
-        "YELLOW",
-        "PYTHON_VERSION",
-        "show_status",
-        "esac",
-        "logs",
+        "print_status",
         "NC",
-        "print_success",
-        "PID_FILE",
-        "python3",
-        "kill",
-        "start_fetcher",
+        "stop_fetcher",
         "LOG_FILE",
         "rm",
-        "echo",
-        "stop_fetcher",
-        "is_running",
-        "print_status",
-        "break",
-        "VENV_DIR",
-        "fi",
-        "package_name",
-        "sleep",
-        "return",
-        "help",
-        "PYTHON_SCRIPT",
-        "restart_fetcher",
-        "for",
-        "ensure_venv",
-        "IFS",
-        "PYTHON_BIN",
-        "ps",
-        "ls",
-        "case",
-        "BLUE",
-        "stop",
-        "restart",
-        "done",
+        "print_warning",
         "if",
-        "cd"
+        "REQUIRED_PACKAGES",
+        "is_running",
+        "RED",
+        "status",
+        "YELLOW",
+        "esac",
+        "PID",
+        "echo",
+        "return",
+        "print_error",
+        "restart_fetcher",
+        "VENV_DIR",
+        "break",
+        "fi",
+        "PYTHON_SCRIPT",
+        "ensure_venv",
+        "logs",
+        "help",
+        "exit",
+        "ls",
+        "PID_FILE",
+        "else",
+        "ps",
+        "SCRIPT_DIR",
+        "show_logs",
+        "IFS",
+        "kill",
+        "restart",
+        "for",
+        "BLUE",
+        "package_name",
+        "GREEN",
+        "import_name",
+        "print_success",
+        "python3",
+        "cd",
+        "PYTHON_VERSION",
+        "PYTHON_BIN",
+        "sleep",
+        "tail",
+        "start",
+        "stop",
+        "PIP_BIN",
+        "done",
+        "start_fetcher",
+        "case",
+        "show_status"
       ],
       "python_calls": [
         "-m venv \"$VENV_DIR\""
       ]
     },
+    "DEVIN_STARTUP_GUIDE.sh": {
+      "type": "shell_script",
+      "commands": [
+        "echo"
+      ],
+      "python_calls": [
+        "run_comprehensive_test.py\""
+      ]
+    },
     "start_ssh_monitor.sh": {
       "type": "shell_script",
       "commands": [
-        "RED",
-        "start_ssh_monitoring",
-        "netstat",
-        "PROJECT_LOG",
-        "GREEN",
-        "monitor_data_flow",
-        "exit",
-        "print_error",
-        "else",
-        "apt-get",
-        "SCRIPT_DIR",
-        "tail",
-        "YELLOW",
-        "NC",
-        "inotifywait",
-        "print_success",
-        "ss",
-        "LOG_FILE",
-        "echo",
         "print_status",
-        "sleep",
-        "fi",
         "pkill",
+        "NC",
+        "monitor_data_flow",
+        "LOG_FILE",
+        "ss",
+        "if",
+        "RED",
+        "YELLOW",
+        "echo",
+        "print_error",
+        "fi",
+        "exit",
+        "else",
+        "PROJECT_LOG",
         "ps",
-        "BLUE",
-        "done",
+        "SCRIPT_DIR",
+        "netstat",
         "elif",
-        "if"
+        "BLUE",
+        "GREEN",
+        "print_success",
+        "sleep",
+        "tail",
+        "inotifywait",
+        "apt-get",
+        "done",
+        "start_ssh_monitoring"
       ],
       "python_calls": []
     },
@@ -43594,6 +44638,14 @@
         "subprocess.run([START_SCRIPT, \"stop\"])",
         "subprocess.run([START_SCRIPT, \"stop\"])",
         "subprocess.run([START_SCRIPT, \"stop\"])"
+      ],
+      "os_system_calls": []
+    },
+    "devin_startup_guide.py": {
+      "type": "python_subprocess",
+      "subprocess_calls": [
+        "subprocess.run(command, shell=True, capture_output=True, text=True, timeout=30)",
+        "subprocess.run(command, shell=True, timeout=30)"
       ],
       "os_system_calls": []
     },
@@ -43632,6 +44684,14 @@
       "ssh_calls": [],
       "socket_calls": []
     },
+    "devin_setup.py": {
+      "type": "network_usage",
+      "network_imports": [
+        "urllib"
+      ],
+      "ssh_calls": [],
+      "socket_calls": []
+    },
     "data_flow_analyzer.py": {
       "type": "network_usage",
       "network_imports": [
@@ -43652,84 +44712,84 @@
   },
   "network_protocols": {},
   "ssh_monitoring": {
-    "active_connections": 15,
-    "total_recorded": 15,
+    "active_connections": 19,
+    "total_recorded": 19,
     "latest_connections": [
       {
-        "timestamp": "2025-06-10T13:44:39.132475",
+        "timestamp": "2025-06-10T14:57:21.642855",
         "local_addr": "::ffff:172.237.144.166:22",
-        "remote_addr": "::ffff:174.101.130.32:56432",
+        "remote_addr": "::ffff:185.93.89.118:60176",
         "status": "ESTABLISHED",
-        "pid": 448681
+        "pid": 565595
       },
       {
-        "timestamp": "2025-06-10T13:44:39.132488",
+        "timestamp": "2025-06-10T14:57:21.642864",
         "local_addr": "::ffff:172.237.144.166:22",
         "remote_addr": "::ffff:71.73.130.26:49351",
         "status": "ESTABLISHED",
         "pid": 524813
       },
       {
-        "timestamp": "2025-06-10T13:44:39.132503",
-        "local_addr": "::ffff:172.237.144.166:22",
-        "remote_addr": "::ffff:174.101.130.32:49764",
-        "status": "ESTABLISHED",
-        "pid": 417386
-      },
-      {
-        "timestamp": "2025-06-10T13:44:39.132519",
-        "local_addr": "::ffff:172.237.144.166:22",
-        "remote_addr": "::ffff:71.73.130.26:50931",
-        "status": "ESTABLISHED",
-        "pid": 534572
-      },
-      {
-        "timestamp": "2025-06-10T13:44:39.132531",
+        "timestamp": "2025-06-10T14:57:21.642877",
         "local_addr": ":::22",
         "remote_addr": "None",
         "status": "LISTEN",
         "pid": 79448
+      },
+      {
+        "timestamp": "2025-06-10T14:57:21.642881",
+        "local_addr": "::ffff:172.237.144.166:22",
+        "remote_addr": "::ffff:174.101.130.32:56432",
+        "status": "ESTABLISHED",
+        "pid": 448681
+      },
+      {
+        "timestamp": "2025-06-10T14:57:21.642898",
+        "local_addr": "::ffff:172.237.144.166:22",
+        "remote_addr": "::ffff:71.73.130.26:52373",
+        "status": "ESTABLISHED",
+        "pid": 549528
       }
     ]
   },
   "network_monitoring": {
-    "active_connections": 138,
-    "total_recorded": 138,
+    "active_connections": 151,
+    "total_recorded": 151,
     "latest_connections": [
       {
-        "timestamp": "2025-06-10T13:44:34.103385",
-        "local_addr": "172.237.144.166:49522",
-        "remote_addr": "35.223.238.178:443",
-        "status": "ESTABLISHED",
-        "pid": 525110
-      },
-      {
-        "timestamp": "2025-06-10T13:44:34.103389",
+        "timestamp": "2025-06-10T14:57:16.572014",
         "local_addr": "127.0.0.1:41695",
-        "remote_addr": "127.0.0.1:33552",
+        "remote_addr": "127.0.0.1:33530",
         "status": "ESTABLISHED",
         "pid": 417641
       },
       {
-        "timestamp": "2025-06-10T13:44:34.103393",
-        "local_addr": "127.0.0.1:39366",
-        "remote_addr": "127.0.0.1:35603",
+        "timestamp": "2025-06-10T14:57:16.572018",
+        "local_addr": "127.0.0.1:39558",
+        "remote_addr": "127.0.0.1:34563",
         "status": "ESTABLISHED",
-        "pid": 362456
+        "pid": 524813
       },
       {
-        "timestamp": "2025-06-10T13:44:34.103397",
-        "local_addr": "172.237.144.166:54408",
-        "remote_addr": "216.86.161.12:443",
-        "status": "ESTABLISHED",
-        "pid": 525110
-      },
-      {
-        "timestamp": "2025-06-10T13:44:34.103401",
+        "timestamp": "2025-06-10T14:57:16.572021",
         "local_addr": "127.0.0.1:34563",
-        "remote_addr": "127.0.0.1:56484",
+        "remote_addr": "127.0.0.1:39544",
         "status": "ESTABLISHED",
         "pid": 362456
+      },
+      {
+        "timestamp": "2025-06-10T14:57:16.572024",
+        "local_addr": "127.0.0.1:38580",
+        "remote_addr": "127.0.0.1:42679",
+        "status": "ESTABLISHED",
+        "pid": 448681
+      },
+      {
+        "timestamp": "2025-06-10T14:57:16.572028",
+        "local_addr": "127.0.0.1:41695",
+        "remote_addr": "127.0.0.1:33588",
+        "status": "ESTABLISHED",
+        "pid": 417641
       }
     ]
   }

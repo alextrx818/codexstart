@@ -1,0 +1,226 @@
+Step7 References Scan Report
+================================================================================
+Files scanned: 89 files with matches
+Total matches found: 89
+
+Line 6: then monitors step1.json, step2.json, and step7_matches.log to verify
+
+Line 7: data is flowing from Step 1 → Step 2 → Step 7 in each 60 second cycle.
+
+Line 24: STEP7_LOG    = "step7_matches.log"
+
+Line 54: # 1) Launch the pipeline (Step 1 → Step 2 → Step 7, plus alert modules)
+
+Line 111: # 4) Wait for step7_matches.log to be created and get its last few lines
+
+Line 112: print(f"{now()} | Waiting up to {TIMEOUT_SEC}s for '{STEP7_LOG}' to appear…")
+
+Line 114: if not wait_for_file(STEP7_LOG, timeout=TIMEOUT_SEC):
+
+Line 115: print(f"{now()} | ✗ Timeout: '{STEP7_LOG}' did not appear within {TIMEOUT_SEC}s.")
+
+Line 118: print(f"{now()} | ✓ '{STEP7_LOG}' appeared after {t3 - t3_start:.1f}s.")
+
+Line 122: with open(STEP7_LOG, "r", encoding="utf-8") as f:
+
+Line 126: print(f"{now()} | ✗ Could not read '{STEP7_LOG}': {e}")
+
+Line 129: print(f"{now()} | Last lines of '{STEP7_LOG}':")
+
+Line 10: from step7 import run_step7
+
+
+Line 93: # Command 10: Run Step 7 (filtering and display)
+
+Line 94: print("10. Running Step 7...")
+
+Line 95: run_step7(summaries_list=summaries)
+
+
+File: /root/6-4-2025/show_logic_map.py
+Line 35: "step7.py": "Data filtering and match detection"
+
+File: /root/6-4-2025/show_logic_map.py
+Line 69: # Analyze step7.py
+
+File: /root/6-4-2025/show_logic_map.py
+Line 70: if "step7.py" in file_deps:
+
+File: /root/6-4-2025/show_logic_map.py
+Line 71: step7_deps = file_deps["step7.py"]
+
+File: /root/6-4-2025/show_logic_map.py
+Line 72: print("📄 step7.py:")
+
+File: /root/6-4-2025/show_logic_map.py
+Line 74: print("   📝 Writes: step7_matches.log")
+
+File: /root/6-4-2025/show_logic_map.py
+Line 76: print("   ⚙️ Key Operations:", step7_deps.get("function_calls", [])[:3])
+
+File: /root/6-4-2025/show_logic_map.py
+Line 182: print("4. step7.py → reads step2.json → filters matches → writes step7_matches.log")
+
+File: /root/6-4-2025/devin_startup_guide.py
+Line 119: data_files = ["step1.json", "step2.json", "step7_simple.log"]
+
+File: /root/6-4-2025/devin_startup_guide.py
+Line 185: "📊 Data Processing": "step1.py → step2.py → step7.py pipeline",
+
+File: /root/6-4-2025/step7.py
+Line 3: Step 7 – Pretty Display for In‑Play Matches (centred banners, full logic)
+
+File: /root/6-4-2025/step7.py
+Line 5: This file is a **drop‑in replacement** for the original `step7_simple.py`.
+
+File: /root/6-4-2025/step7.py
+Line 12: * Same input (`step2.json`) and log file (`step7_simple.log`).
+
+File: /root/6-4-2025/step7.py
+Line 15: `step7.py`; the orchestrator will behave exactly as before.
+
+File: /root/6-4-2025/step7.py
+Line 26: print(f"[DEBUG] step7.py imported at {datetime.now()}")
+
+File: /root/6-4-2025/step7.py
+Line 34: LOG_FILE = BASE_DIR / "step7_simple.log"
+
+File: /root/6-4-2025/step7.py
+Line 38: print(f"[DEBUG] step7.py will write to: {LOG_FILE}")
+
+File: /root/6-4-2025/step7.py
+Line 59: logger = logging.getLogger("step7")
+
+File: /root/6-4-2025/step7.py
+Line 210: logger.info("STEP 7: STATUS FILTER (2–7)")
+
+File: /root/6-4-2025/step7.py
+Line 349: def run_step7(matches_list=None):
+
+File: /root/6-4-2025/step7.py
+Line 351: Run Step 7 processing - can be called from other modules like step2.py
+
+File: /root/6-4-2025/step7.py
+Line 410: logger.info(f"Step 7 completed successfully - wrote {len(in_play)} matches to {LOG_FILE}")
+
+File: /root/6-4-2025/step7.py
+Line 415: logger.error(f"❌ Error in Step 7: {e}")
+
+File: /root/6-4-2025/data_flow_analyzer.py
+Line 706: f.write("step7.py (Filtering)\n")
+
+File: /root/6-4-2025/data_flow_analyzer.py
+Line 708: f.write("step7_matches.log\n\n")
+
+File: /root/6-4-2025/oddsconfig.py
+Line 10: - Import this module in step7.py to handle odds conversion
+
+File: /root/6-4-2025/step2.py
+Line 865: # Call Step 7 after Step 2 completes
+
+File: /root/6-4-2025/step2.py
+Line 867: import step7
+
+File: /root/6-4-2025/step2.py
+Line 868: logger.info("Starting Step 7 (filter & pretty-print)...")
+
+File: /root/6-4-2025/step2.py
+Line 869: step7.run_step7(matches_list=merged_data['summaries'])
+
+File: /root/6-4-2025/step2.py
+Line 871: logger.error(f"Failed to run Step 7: {e}")
+
+File: /root/6-4-2025/step2.py
+Line 972: # Call Step 7 after Step 2 completes
+
+File: /root/6-4-2025/step2.py
+Line 974: import step7
+
+File: /root/6-4-2025/step2.py
+Line 975: logger.info("Starting Step 7 (filter & pretty-print)...")
+
+File: /root/6-4-2025/step2.py
+Line 976: step7.run_step7(matches_list=summaries)
+
+File: /root/6-4-2025/step2.py
+Line 978: logger.error(f"Failed to run Step 7 due to import or attribute error: {e}")
+
+File: /root/6-4-2025/scan_step7_references.py
+Line 7: LOG_FILE = PROJECT_DIR / 'step7_references_scan.log'
+
+File: /root/6-4-2025/scan_step7_references.py
+Line 36: log.write(f"Step7 References Scan Report\n{'='*80}\n")
+
+File: /root/6-4-2025/debug_step7.py
+Line 4: # Load step2.json the way step7 does
+
+Line 355: # Step 7: Check generated files
+
+Line 356: self.print_section("STEP 7: CHECKING GENERATED FILES")
+
+Line 3: Test script for step2.py and step7.py pipeline
+
+Line 20: import step7
+
+
+Line 30: self.original_step7_base_dir = step7.BASE_DIR
+
+
+Line 38: step7.STEP2_OUTPUT = step7.BASE_DIR / "step2.json"
+
+Line 147: step7.BASE_DIR = self.original_step7_base_dir
+
+
+Line 198: # Capture stdout of run_step7
+
+Line 201: step7.run_step7(summaries_list=summaries)
+
+Line 211: # Also, there should be a header that mentions "STEP 7: STATUS FILTER"
+
+Line 212: self.assertIn("STEP 7: STATUS FILTER", output)
+
+
+Line 221: # Now run step7 without passing summaries (should read from file)
+
+Line 224: step7.run_step7()  # No summaries_list parameter
+
+Line 232: self.assertIn("STEP 7: STATUS FILTER", output)
+
+Line 235: # Test the full pipeline: step2 -> step7
+
+Line 243: # Run step7 with the summaries
+
+Line 244: print("Running Step 7...")
+
+Line 247: step7.run_step7(summaries_list=summaries)
+
+File: /root/6-4-2025/step1.py
+Line 94: import step7
+
+File: /root/6-4-2025/step1.py
+Line 1428: Run Step 1 → Step 2 → Step 7 every 60 seconds (wall-clock).
+
+File: /root/6-4-2025/step1.py
+Line 1511: summaries = []  # Continue to Step 7 even if Step 2 fails
+
+File: /root/6-4-2025/step1.py
+Line 1513: # Let step2 handle calling step7
+
+File: /root/6-4-2025/step1.py
+Line 1514: # step7.run_step7(matches_list=summaries)
+
+File: /root/6-4-2025/step1.py
+Line 1547: """Run a single Step 1 → Step 2 → Step 7 cycle (for non-continuous mode)"""
+
+File: /root/6-4-2025/step1.py
+Line 1580: # Let step2 handle calling step7
+
+File: /root/6-4-2025/step1.py
+Line 1581: # step7.run_step7(matches_list=summaries)
+
+File: /root/6-4-2025/step1.py
+Line 1612: Update step2.json with the complete pipeline timing from Step 1 to Step 7 completion.
+
+File: /root/6-4-2025/step1.py
+Line 1641: Update step1.json with the complete pipeline timing from Step 1 to Step 7 completion.
+

@@ -1,37 +1,37 @@
 {
-  "test_timestamp": "2025-06-10T13:44:39.388915",
+  "test_timestamp": "2025-06-10T14:57:22.030098",
   "test_duration": "N/A",
   "results": {
     "initial_status": {
       "running": true,
-      "output": "\u001b[0;34m[2025-06-10 13:43:16]\u001b[0m JSON Data Fetcher Status:\n==========================\n\u001b[0;31m[2025-06-10 13:43:16]\u001b[0m Status: NOT RUNNING\n\n\u001b[0;34mVirtual Environment:\u001b[0m\n  Virtual env: /root/6-4-2025/venv (\u2713 exists)\n  Python path: /root/6-4-2025/venv/bin/python\n  Python version: Python 3.12.3\n\n\u001b[0;34mAvailable Commands:\u001b[0m\n  ./start.sh start   - Start the data fetcher\n  ./start.sh stop    - Stop the data fetcher\n  ./start.sh restart - Restart the data fetcher\n  ./start.sh status  - Show this status\n  ./start.sh logs    - Show live logs\n",
+      "output": "\u001b[0;34m[2025-06-10 14:55:46]\u001b[0m JSON Data Fetcher Status:\n==========================\n\u001b[0;31m[2025-06-10 14:55:46]\u001b[0m Status: NOT RUNNING\n\n\u001b[0;34mVirtual Environment:\u001b[0m\n  Virtual env: /root/6-4-2025/venv (\u2713 exists)\n  Python path: /root/6-4-2025/venv/bin/python\n  Python version: Python 3.12.3\n\n\u001b[0;34mAvailable Commands:\u001b[0m\n  ./start.sh start   - Start the data fetcher\n  ./start.sh stop    - Stop the data fetcher\n  ./start.sh restart - Restart the data fetcher\n  ./start.sh status  - Show this status\n  ./start.sh logs    - Show live logs\n",
       "error": ""
     },
     "stop_result": {
       "success": false,
-      "output": "\u001b[0;34m[2025-06-10 13:43:16]\u001b[0m Stopping JSON Data Fetcher...\n\u001b[1;33m[2025-06-10 13:43:16]\u001b[0m Data fetcher is not running\n",
+      "output": "\u001b[0;34m[2025-06-10 14:55:46]\u001b[0m Stopping JSON Data Fetcher...\n\u001b[1;33m[2025-06-10 14:55:46]\u001b[0m Data fetcher is not running\n",
       "error": ""
     },
     "verification": {
       "running": true,
-      "output": "\u001b[0;34m[2025-06-10 13:44:18]\u001b[0m JSON Data Fetcher Status:\n==========================\n\u001b[0;32m[2025-06-10 13:44:18]\u001b[0m Status: RUNNING (PID: 545737)\n\n\u001b[0;34mProcess Details:\u001b[0m\n    PID    PPID %CPU %MEM     ELAPSED CMD\n 545737       1  0.0  0.0       00:54 /bin/bash ./start.sh start\n\n\u001b[0;34mRecent Log Entries (last 5 lines):\u001b[0m\n2025-06-10 13:43:28,406 - INFO - Step 7 completed successfully - wrote 18 matches to /root/6-4-2025/step7_simple.log\n2025-06-10 13:43:28,414 - INFO - STEP 2 \u2013 run_step2: 0.16s\n2025-06-10 13:43:28,415 - INFO - STEP 2 \u2192 step2.json produced 29 flattened summaries.\n2025-06-10 13:43:28,415 - INFO - TOTAL CYCLE TIME: 3.36s\n2025-06-10 13:43:28,415 - INFO - Cycle took 3.36s; sleeping 56.64s before next run.\n\n\u001b[0;34mGenerated Files:\u001b[0m\n-rw-r--r-- 1 root root     2613 Jun  8 09:16 /root/6-4-2025/api_test_results_20250606_160811.json\n-rw-r--r-- 1 root root  2830452 Jun  8 11:06 /root/6-4-2025/centralized_step_logs.json\n-rw-r--r-- 1 root root        2 Jun  8 12:19 /root/6-4-2025/country_cache.json\n-rw-r--r-- 1 root root       36 Jun 10 13:43 /root/6-4-2025/daily_match_counter.json\n-rw-r--r-- 1 root root  1140263 Jun 10 13:13 /root/6-4-2025/data_flow_analysis.json\n\n\u001b[0;34mVirtual Environment:\u001b[0m\n  Virtual env: /root/6-4-2025/venv (\u2713 exists)\n  Python path: /root/6-4-2025/venv/bin/python\n  Python version: Python 3.12.3\n\n\u001b[0;34mAvailable Commands:\u001b[0m\n  ./start.sh start   - Start the data fetcher\n  ./start.sh stop    - Stop the data fetcher\n  ./start.sh restart - Restart the data fetcher\n  ./start.sh status  - Show this status\n  ./start.sh logs    - Show live logs\n",
+      "output": "\u001b[0;34m[2025-06-10 14:56:48]\u001b[0m JSON Data Fetcher Status:\n==========================\n\u001b[0;32m[2025-06-10 14:56:48]\u001b[0m Status: RUNNING (PID: 565123)\n\n\u001b[0;34mProcess Details:\u001b[0m\n    PID    PPID %CPU %MEM     ELAPSED CMD\n 565123       1  0.0  0.0       00:57 /bin/bash ./start.sh start\n\n\u001b[0;34mRecent Log Entries (last 5 lines):\u001b[0m\n2025-06-10 14:55:56,593 - INFO - Step 7 completed successfully - wrote 23 matches to /root/6-4-2025/step7_simple.log\n2025-06-10 14:55:56,622 - INFO - STEP 2 \u2013 run_step2: 0.32s\n2025-06-10 14:55:56,622 - INFO - STEP 2 \u2192 step2.json produced 31 flattened summaries.\n2025-06-10 14:55:56,623 - INFO - TOTAL CYCLE TIME: 4.92s\n2025-06-10 14:55:56,623 - INFO - Cycle took 4.92s; sleeping 55.08s before next run.\n\n\u001b[0;34mGenerated Files:\u001b[0m\n-rw-r--r-- 1 root root     2613 Jun  8 09:16 /root/6-4-2025/api_test_results_20250606_160811.json\n-rw-r--r-- 1 root root  2830452 Jun  8 11:06 /root/6-4-2025/centralized_step_logs.json\n-rw-r--r-- 1 root root        2 Jun  8 12:19 /root/6-4-2025/country_cache.json\n-rw-r--r-- 1 root root       36 Jun 10 14:55 /root/6-4-2025/daily_match_counter.json\n-rw-r--r-- 1 root root  1203979 Jun 10 14:26 /root/6-4-2025/data_flow_analysis.json\n\n\u001b[0;34mVirtual Environment:\u001b[0m\n  Virtual env: /root/6-4-2025/venv (\u2713 exists)\n  Python path: /root/6-4-2025/venv/bin/python\n  Python version: Python 3.12.3\n\n\u001b[0;34mAvailable Commands:\u001b[0m\n  ./start.sh start   - Start the data fetcher\n  ./start.sh stop    - Stop the data fetcher\n  ./start.sh restart - Restart the data fetcher\n  ./start.sh status  - Show this status\n  ./start.sh logs    - Show live logs\n",
       "error": ""
     },
     "analysis_results": {
       "success": true,
       "summary": {
-        "files_analyzed": 589,
-        "dependencies_found": 29,
-        "api_endpoints": 29,
-        "data_flows": 31,
-        "ssh_connections": 15,
-        "network_connections": 138
+        "files_analyzed": 591,
+        "dependencies_found": 32,
+        "api_endpoints": 32,
+        "data_flows": 32,
+        "ssh_connections": 19,
+        "network_connections": 151
       }
     },
     "protocol_tests": {
-      "json_files": 16,
+      "json_files": 17,
       "log_files": 15,
-      "python_files": 29,
+      "python_files": 32,
       "recently_modified": [
         "step7_simple.log",
         "ssh_monitor.log",
@@ -48,11 +48,11 @@
     "generated_files": {
       "data_flow_analysis.json": {
         "exists": true,
-        "size_kb": 1157
+        "size_kb": 1183
       },
       "data_flow_summary.txt": {
         "exists": true,
-        "size_kb": 186
+        "size_kb": 188
       },
       "data_flow_diagram.txt": {
         "exists": true,
@@ -60,7 +60,7 @@
       },
       "ssh_monitor.log": {
         "exists": true,
-        "size_kb": 362072
+        "size_kb": 566201
       }
     }
   }

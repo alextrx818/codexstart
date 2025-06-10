@@ -2,13 +2,13 @@
 DATA FLOW AND ARCHITECTURE ANALYSIS SUMMARY
 ================================================================================
 
-Analysis Timestamp: 2025-06-10T13:43:16.685971
+Analysis Timestamp: 2025-06-10T14:55:46.607936
 Project Directory: /root/6-4-2025
 
 PROJECT STRUCTURE:
 ----------------------------------------
 root/
-  - step7_simple.log (19KB)
+  - step7_simple.log (23KB)
   - test_api_rate_limits.py (10KB)
   - README.md (4KB)
   - step2_daily_counter.json (0KB)
@@ -16,6 +16,7 @@ root/
   - test_pipeline_flow.py (6KB)
   - test_endpoints.py (3KB)
   - user_interaction_logger.py (6KB)
+  - test_summary.txt (0KB)
   - fix_step2_merge.py (6KB)
   - analyze_logging.py (5KB)
   - log_interaction.py (2KB)
@@ -26,17 +27,18 @@ root/
   - integration_test.py (3KB)
   - step2_field_mapping.md (7KB)
   - step1.log.2025-06-08 (612KB)
-  - ssh_monitor.log (279173KB)
+  - ssh_monitor.log (401199KB)
   - test_step2_debug.py (1KB)
   - user_interactions.json (4KB)
   - debug_merge.py (1KB)
-  - start.log (59KB)
+  - start.log (72KB)
   - user_interactions.log (2KB)
   - step2_sample.json (3KB)
   - continuous.log (26KB)
   - step1_init.log (2KB)
   - generate_mock_data.py (3KB)
   - step1_2025-06-10.json (4250KB)
+  - show_logic_map.py (7KB)
   - .env.template (0KB)
   - step2_field_paths_reference.py (7KB)
   - PIPELINE_DATA_FLOW_MAP.md (25KB)
@@ -44,9 +46,11 @@ root/
   - step1_2025-06-09.json (12472KB)
   - step1_2025-06-08.json (17385KB)
   - python_naming_consistency_analyzer.py (36KB)
+  - devin_startup_guide.py (10KB)
   - auto_logger.py (1KB)
   - step2_key_mappings_summary.txt (2KB)
   - step_execution_summary.json (9KB)
+  - devin_setup.py (6KB)
   - filter_odds_minutes.py (3KB)
   - step1.pid (0KB)
   - start.sh (10KB)
@@ -54,9 +58,10 @@ root/
   - country_cache.json (0KB)
   - centralized_step_logs.json (2764KB)
   - step7.py (14KB)
+  - DEVIN_STARTUP_GUIDE.sh (1KB)
   - data_flow_analyzer.py (30KB)
   - step2_development.ipynb (13KB)
-  - step1.json (10019KB)
+  - step1.json (17308KB)
   - LOGGING_CONSISTENCY_CHECKLIST.md (7KB)
   - step1.log.2025-06-03 (414KB)
   - PYTHON_NAMING_CONSISTENCY_ANALYSIS.md (8KB)
@@ -71,9 +76,9 @@ root/
   - STEP_1_2_7_COMPLETE_WITH_LOGGING.md (7KB)
   - run_step2_debug.py (1KB)
   - start_ssh_monitor.sh (3KB)
-  - data_flow_analysis.json (1113KB)
+  - data_flow_analysis.json (1175KB)
   - END_TO_END_TEST.md (4KB)
-  - data_flow_summary.txt (186KB)
+  - data_flow_summary.txt (188KB)
   - step2_init.log (13KB)
   - formatted_matches.log (0KB)
   - LOGGING_ARCHITECTURE_QUICK_REFERENCE.md (12KB)
@@ -81,7 +86,7 @@ root/
   - .gitignore (0KB)
   - .env (0KB)
   - step1_2025-06-07.json (21172KB)
-  - data_flow_diagram.txt (2KB)
+  - data_flow_diagram.txt (3KB)
   - test_analyzer.py (0KB)
   - step1_2025-06-06.json (0KB)
   - analyze_json_fields.py (4KB)
@@ -91,13 +96,14 @@ root/
   - step1_run.log (0KB)
   - step2_data_flow_diagram.txt (8KB)
   - test_pipeline.py (10KB)
+  - test_results.json (5KB)
   - continuous_new.log (3KB)
   - api_fields_analysis.md (3KB)
   - step1.py (74KB)
   - daily_match_counter.json (0KB)
   - verify_filtering.py (3KB)
   - step1_output.log (142KB)
-  - step2.json (100KB)
+  - step2.json (143KB)
 
 venv_test/
   - pyvenv.cfg (0KB)
@@ -3834,8 +3840,8 @@ venv/bin/
 
 .git/
   - FETCH_HEAD (0KB)
-  - config (0KB)
-  - index (4KB)
+  - config (1KB)
+  - index (6KB)
   - ORIG_HEAD (0KB)
   - packed-refs (0KB)
   - description (0KB)
@@ -3859,6 +3865,9 @@ venv/bin/
   - STEP127-UNIFIED-LOGGING (0KB)
 
 .git/refs/remotes/
+
+.git/refs/remotes/devinai/
+  - main (0KB)
 
 .git/refs/remotes/origin/
   - step2-done (0KB)
@@ -3976,6 +3985,7 @@ venv/bin/
   - 2d0e5b87962a9aace7dd3d15aef34eb349f085 (6KB)
   - 89b9652957e8f4e73916e18048368e8d75911e (1KB)
   - 5271c98867018e42c44504c9fef5ae3aa26d8a (2KB)
+  - 087eb6c77af7edbf40fc4a9cb934951888df42 (0KB)
   - 061f5b39081f39e9f4fa2a0e88aec0e0a3da79 (1KB)
 
 .git/objects/17/
@@ -4153,6 +4163,7 @@ venv/bin/
 .git/objects/7b/
   - 6f6a324bad46c7d78fe6ab4ad9630ba674f0a6 (0KB)
   - 722d58db0f35c3f6621d02876cefc74e64384a (0KB)
+  - 64cf61b54dd453b5ae50e79c4ae0faeb4d0e54 (0KB)
   - be97e6665356327814e2b797ffcc5724974a46 (4KB)
   - aa8c4b68127d5cdf0be9a799429e61347c2694 (0KB)
   - e2474dd91c8a7da181fcda09d838254b890d75 (0KB)
@@ -4263,6 +4274,7 @@ venv/bin/
   - aa793caee1b68406edb82a783b76760113c9b0 (0KB)
   - 3463f619154ede6fcc35c2efa7209a33893ae5 (0KB)
   - 799db39e7625dd74bd9caa5c29b4819a7cbd3f (0KB)
+  - b5cbb4af82d47cfd376397653c2fa1bd854954 (0KB)
   - 6d026dd982ed32012a7f677ec4451ef417d5d7 (0KB)
   - 0b245d279e96724d5610f93bc3b3c8c22ca032 (4KB)
   - 53b2b138df881c4c95239d0e4bede831b36ab5 (0KB)
@@ -4306,6 +4318,7 @@ venv/bin/
 
 .git/objects/8c/
   - c64e9a1000bddf5dde795868dcdcb782c35a1c (26KB)
+  - 018e68db4da11bf13b6754a31f2c3fe8735c05 (2KB)
   - e89cef706adc0d08fc4de5625a495e4003798e (0KB)
   - 8becf70e2e9a70dca741e219ca4632858ebd0a (2KB)
   - 6167fb3a6b390c5c0a3ba455f76cedf34695f2 (1KB)
@@ -4321,6 +4334,7 @@ venv/bin/
 .git/objects/c3/
   - 26e80dd117458ff6e71741ca57359629b05ae4 (2KB)
   - bac6b12a62192b005bda352cba20a593101c65 (0KB)
+  - 176146b80f0604e74300f319f19db147037dda (0KB)
   - 9fb8aa5a9426c18157253aad4b0168084eeb1a (4KB)
   - 10b66e783820e5596bee9e4d92e531d59d6dc9 (2KB)
 
@@ -4329,6 +4343,7 @@ venv/bin/
   - 1f3490096338f40e601628ac70f04112ace51d (1KB)
   - a27b438517846abb2170b104ebe374bea967ba (0KB)
   - 118a4f4b73e55879aaa81a8536e7214538f0e8 (0KB)
+  - b03082da389724169f48e22cfa082a457bd899 (11KB)
   - bd1a994f8e3211797a7f0920bdc5781d09d410 (8KB)
   - 47fc522b690ba2697843edd044f2039a4123a9 (0KB)
   - ced086337783c4b73b26cd17d2c1c260e24029 (0KB)
@@ -4544,6 +4559,7 @@ venv/bin/
   - 36e64c467ca8d9cadc88ab03da71faf1aa8abb (0KB)
   - 2933bfea310afb990f5a3f18b150972b7b1486 (0KB)
   - 00b366a79715b22f95ab9f55d6127f82742277 (3KB)
+  - 2d591e696da28f3f79caa3a8d2be6c3aa83cda (19KB)
   - 366c6098c49ecd546e1cc1538919e1414a3aee (1KB)
 
 .git/objects/12/
@@ -4617,6 +4633,7 @@ venv/bin/
   - 4d300cef077e698989245562375a9444d983fa (1KB)
   - e782c8a45bbabcf240f3cac4303ac12b0ec274 (2KB)
   - 3ebc9c410fe2a33ad26a5d02bb99b9503e1f72 (0KB)
+  - 2783eadd92dc1de193ea685911056a6b42567f (0KB)
   - 8fbd88a9b6250f098e63e8ebf79c656cd84fac (1KB)
 
 .git/objects/6a/
@@ -4652,6 +4669,7 @@ venv/bin/
   - 35acdabda1b6ed96420e589d4f6868d23d8933 (0KB)
   - c536b468d44dfbbe44f4d5cfa6f443913cca57 (9KB)
   - b607ccb59a2edd9712c7c93cfbc4b966be05db (0KB)
+  - 55d0877a50542fd045dba5c6ef4c6efe3f4d2a (70KB)
 
 .git/objects/3b/
   - 9ecacf6eef72366df1cc847c0d4666efc8a48c (0KB)
@@ -4682,6 +4700,7 @@ venv/bin/
   - 412a4cbf9241ea83887876b1b8b22c367ff4fd (1KB)
   - 9cad930e0029fc2f8e5111df1bad38151a07a9 (11KB)
   - dbbfa06c14b49d665dd2a94524fa3ddec128dc (0KB)
+  - 37d5099068dcc922271db3075639d4ed3991c3 (1KB)
 
 .git/objects/95/
   - 7cb12bdf775fb2d805a9c03146dbf3a3e3adc0 (0KB)
@@ -4750,6 +4769,7 @@ venv/bin/
   - 4bd5747a8c9c528dfd22c8e3171851784ade59 (0KB)
   - 66865dde435e9e748c6d1fa4e58836f1c506c7 (0KB)
   - 0b3a4fe6055b276d5515a4e81d60d921c6f381 (3KB)
+  - fefd0d5477c46389b6d6b43a157d5e14501e60 (0KB)
   - 9ebc36718e2c62d8ebf4d5889cae166680e8c5 (10KB)
 
 .git/objects/69/
@@ -4764,6 +4784,7 @@ venv/bin/
   - d6ea5db204d599266412558f5a1fae076fc41a (0KB)
   - a5cc4b84d369b03684c30cdb66b7abf087f467 (0KB)
   - dacb2e500e2f9621b2debc1756d308747b67f6 (0KB)
+  - 16cb74b24288f21df768f147e22d205e909547 (0KB)
   - 15db2540dbf093bbbca612af0b5fa3d12dacf0 (0KB)
   - 95c0a446f4f6fe1c6edf4a17d05485c08573b9 (3KB)
 
@@ -4825,6 +4846,7 @@ venv/bin/
   - fec727c8419bbc6518085ecedde1f7de8992c9 (2KB)
   - 7db05ea35eadcc102caa8ca2494ae4d9a31b00 (8KB)
   - 776ddacda7807321a2a33812ee0d47d322d974 (0KB)
+  - 31375fc26d6e41ce3482ab0e9fba34d66bd369 (1247KB)
   - bdfbfa7a720b49e1a09b76f5713601d0cb2ad1 (0KB)
 
 .git/objects/bb/
@@ -4911,6 +4933,7 @@ venv/bin/
 .git/objects/5f/
   - 1c11289f6a54cb07ebdbf31d02e8e81b18b07f (0KB)
   - 3706ce64cadf081a6c56abd7ba423575a4abb2 (0KB)
+  - 5899dbb3d5d63df8136db8b13fe004e8b08c1d (3KB)
   - 3ea3d919363f08ab03edbc85b6099bc4df5647 (0KB)
 
 .git/objects/e4/
@@ -5016,6 +5039,7 @@ venv/bin/
   - 802f1c2acf9cc73481ae86c9e099fcfc28cf25 (0KB)
   - d351f4a73d590f4579cbe88ae707cde7db05b4 (24KB)
   - ab9f0839c6e4d3731db2214e5364250a6a2f3a (0KB)
+  - 0d1c773a6360467c9253124555dbee50a71004 (0KB)
   - 2f79c6b3f50f6bf5626df6418d733612776d46 (5KB)
   - b0d7b7772885fcaf0dcd92e44dc7164c51dacc (0KB)
 
@@ -5034,6 +5058,7 @@ venv/bin/
   - f9949ffa93e44835ab133998b89e440094f909 (0KB)
   - 416e1e799abfbf62382456020cc8e59e5cf01f (0KB)
   - 7fb3c0e2ea3ee7dc45ad4aeb97c0e77beff388 (6KB)
+  - 6678edc90fd7af94af0a202781f0ee7f4bfe67 (7KB)
   - 4c631ba11786bceebd22591f91bd378d8b232c (0KB)
   - 6d958f8630cba512d8e58ca8edfbd516291522 (1KB)
 
@@ -5135,6 +5160,7 @@ venv/bin/
   - 282f6487765d5173163525b308af28006b48b2 (0KB)
   - 057f17be610174f30928748b5004dcbf6c501c (5KB)
   - 9d5cc6624c6797e4a383fe0e97c0a6dc07d670 (2KB)
+  - 1b9cf23cfffe1b4f5701b2f97628c14641ddb1 (0KB)
   - 029b770cd87a12086e70b1be9900c93d255f0b (0KB)
   - cf2a7b0ee2898b72714b756e4b27fbbad4beab (9KB)
   - 9e3396557652707c0c2232e119e13a2dd172fb (0KB)
@@ -5161,6 +5187,7 @@ venv/bin/
   - 626d71ab4214c3c88e8e3922133cde68ca8424 (2KB)
   - 342d7aa34a74168e74f6fcb306d5b59ea638b6 (19KB)
   - f68c47bf6e82b3faea0bd558852585f5f50a81 (0KB)
+  - 532c5b473b8cf2f0cf90cfeb89e241821b7fb8 (0KB)
 
 .git/objects/4a/
   - d0278993a986cecabf966d7b6ffd0c58f060e4 (0KB)
@@ -5227,6 +5254,7 @@ venv/bin/
   - cd2867145fadb498717739ed5a7773148c7160 (6KB)
   - 89e27c4659d1d0092108025d760bd9ee6db4c1 (0KB)
   - 616a86d52ed931647827a07ddc48d04e1cc9ba (0KB)
+  - a955783495564f84460cecb4fc7deeaecbcfc0 (2KB)
   - fc2a5fc9556a533714fc96a5bb13ef3571edd6 (0KB)
   - 48376da8849865aa0906d60485e6b1cf9606a4 (0KB)
   - 5e9d960f8604c487e063ad9ed3f6f63027f3b4 (1KB)
@@ -5246,6 +5274,7 @@ venv/bin/
   - 365e6536080bd9372d2a7a58b8ffa3447fec34 (2KB)
 
 .git/objects/04/
+  - ca3e5986ad1b5b0e346e6ac5f925b0e4700f48 (155KB)
   - 2dac813e74b8187c3754cb9a937c7f7183e331 (0KB)
   - 52007b0c0bcaa5bf60859d76ea44bbd05d8d0a (5KB)
   - 8dc55dcb23e81932fc77c094a59b5886d4a9a7 (2KB)
@@ -5275,6 +5304,7 @@ venv/bin/
   - bd0664aa29c0abd722661f761031ec0304631c (1KB)
 
 .git/objects/e5/
+  - 83140ed922c1b34168ad2680cb2376ff30c28c (0KB)
   - 92a68e53f6215de9e1d1ac61ce062a333283c0 (0KB)
   - af3c90f4311077d0134575f6e7ff25d89baee5 (11KB)
   - 89bb917e23823e25f9fff7e0849c4d6d4a62bc (0KB)
@@ -5441,6 +5471,7 @@ venv/bin/
 
 .git/objects/e7/
   - c05a554b163b0b9f3b0f735ce49d83fd9b7a5a (0KB)
+  - 734fef1a229897d1af917e37b390b2b001b2d5 (0KB)
   - f13b15a7026a961a6eb981867ddc2e53edd125 (0KB)
   - ea9c545a56ae0b0fabd02e47748004a6d87c3b (0KB)
   - 4ce049c793c96e855ebb15779887a48622bf26 (0KB)
@@ -5489,6 +5520,7 @@ venv/bin/
 
 .git/objects/74/
   - 6fee24f433ce832aa6bac17ea1818507decc3b (0KB)
+  - d2b3e6840fe6911d40dd1662d550b52c5a43d1 (0KB)
   - 01cf5d3a372da67d241dafe83ba756e015eafa (1KB)
   - a30879bc6180d588a706451226cb4c95faf79d (0KB)
   - 48018ce8b19f4cec74e06c56f04c6cca17a43c (0KB)
@@ -5561,6 +5593,7 @@ venv/bin/
   - 7fd5e1bd16152073f7237ad265b5c643e7cbfe (0KB)
   - a8b672f1cbe1b7c0cfb49faaffb70dffb5e0b3 (0KB)
   - 86ace34beef8c66601f65c75b2f8b4cdc23590 (1KB)
+  - 0edcb70c21d63fbf6490b218d53961d4c5a80f (20KB)
   - b985d88983c4792e1f8974746dcb84548cb65e (792KB)
   - 247a78a654187206cd17a403913c6257ffcc7d (1KB)
   - 0e7a4dc79d02a820e291b57c43335d5aa25a41 (2KB)
@@ -5655,6 +5688,7 @@ venv/bin/
 .git/objects/27/
   - c69f0d1eaf3e223d599e91f969d52a821426fe (0KB)
   - 08baea5af1d5169a1cebd00c4762d6bb937fda (0KB)
+  - d0ea69debffff1c48154ef455eef8cbff54afb (1KB)
   - de456f16ab549627b284a39e2265cbdb4ad8e9 (0KB)
   - adab059da8f840bb84cec792eb32c20aa15d45 (1KB)
   - 86c348577855207cc4169714721bebb8776828 (5KB)
@@ -5759,6 +5793,7 @@ venv/bin/
   - 82a2d5b9047bfc09589f387053e24ea490bc54 (4KB)
   - 7fde1b2b99b3a15c93a9140c58dba14357d56b (8KB)
   - bd2966a422d59e8750d4c1d12e833add3d065b (25KB)
+  - 15ccdc2b5a3bc289008b226d123008a6a0e3f7 (4KB)
 
 .git/objects/85/
   - 8a41014169b8f0eb1b905fa3bb69c753a1bda5 (1KB)
@@ -5818,6 +5853,7 @@ venv/bin/
 
 .git/objects/f8/
   - ddbdf215d34b022af11c3d1930dd6ea4dca87e (0KB)
+  - a8ea192d3b80389f7f9e4beff6d05bcc30a883 (0KB)
   - e64100a10d5dcb37d87502ba1a5035204bf180 (0KB)
   - 4f7584a94fc9ad85ad9ce09a05db879ab2c0dd (14KB)
 
@@ -5948,6 +5984,7 @@ venv/bin/
   - 71e7316f47c19358ca229e36ba719fbca3b8c1 (4KB)
   - b98d675883cc7567a79df485cd7b4f015e376f (0KB)
   - 2725fdc10d38532e9784f1efe80fed2210983c (5KB)
+  - ad1e096aa4f3eea3ce0a6ad3f0e3d0caa051ae (3KB)
   - 65c0e8d31cb1d59935878af29baac722f45936 (0KB)
 
 .git/objects/info/
@@ -6142,6 +6179,7 @@ venv/bin/
   - 1fdc0a77f302acaf9a000be408fe7c9a9035aa (0KB)
   - 0abf0383500877336f07eac4a34edaa88f3504 (0KB)
   - f9018ee9357bd193e91abbc66fe9f0e7075f2c (7KB)
+  - 0187627bebb34c78ef583c6e1454ab352e126c (4KB)
   - 07ff405caa9cfcad90da96713a0477cd9a1608 (5KB)
 
 .git/objects/72/
@@ -6178,6 +6216,9 @@ venv/bin/
   - main (0KB)
 
 .git/logs/refs/remotes/
+
+.git/logs/refs/remotes/devinai/
+  - main (0KB)
 
 .git/logs/refs/remotes/origin/
   - step2-done (0KB)
@@ -6237,11 +6278,17 @@ debug_merge.py:
 
 generate_mock_data.py:
 
+show_logic_map.py:
+
 step2_field_paths_reference.py:
 
 python_naming_consistency_analyzer.py:
 
+devin_startup_guide.py:
+
 auto_logger.py:
+
+devin_setup.py:
 
 filter_odds_minutes.py:
 
@@ -6270,12 +6317,12 @@ run_comprehensive_test.py:
 test_step2_field_mapping.py:
 
 test_pipeline.py:
-  Local imports: step2, step7
-  Function calls: step2.run_step2, step7.run_step7
+  Local imports: step7, step2
+  Function calls: step7.run_step7, step2.run_step2
 
 step1.py:
-  Local imports: step2, step7
-  Function calls: step2.run_step2, step7.run_step7
+  Local imports: step7, step2
+  Function calls: step7.run_step7, step2.run_step2
 
 verify_filtering.py:
 
@@ -6286,6 +6333,9 @@ test_api_rate_limits.py:
 
 test_endpoints.py:
   URLs: 'https://api.thesports.com'
+
+devin_setup.py:
+  URLs: "https://api.devin.ai/vscode-profile/776c5576-074d-47de-ab62-3c92673c5886", "https://app.devin.ai/vscode-profile/776c5576-074d-47de-ab62-3c92673c5886/confirm"
 
 step1.py:
   URLs: "https://api.thesports.com/v1/football"
@@ -6302,17 +6352,18 @@ step1_2025-06-08.json (17385KB) - json_data
 step_execution_summary.json (9KB) - json_data
 country_cache.json (0KB) - json_data
 centralized_step_logs.json (2764KB) - json_data
-step1.json (10019KB) - json_data
+step1.json (17308KB) - json_data
 api_test_results_20250606_160811.json (2KB) - json_data
-data_flow_analysis.json (1113KB) - json_data
+data_flow_analysis.json (1175KB) - json_data
 step1_2025-06-07.json (21172KB) - json_data
 step1_2025-06-06.json (0KB) - json_data
+test_results.json (5KB) - json_data
 daily_match_counter.json (0KB) - json_data
-step2.json (100KB) - json_data
-step7_simple.log (19KB) - log_data
+step2.json (143KB) - json_data
+step7_simple.log (23KB) - log_data
 step1.log (0KB) - log_data
-ssh_monitor.log (337580KB) - log_data
-start.log (120KB) - log_data
+ssh_monitor.log (528588KB) - log_data
+start.log (145KB) - log_data
 user_interactions.log (2KB) - log_data
 continuous.log (26KB) - log_data
 step1_init.log (2KB) - log_data

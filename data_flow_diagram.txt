@@ -33,9 +33,12 @@ integration_test.py  step1.json
 test_step2_debug.py  step1.json                                                   
 debug_merge.py       step1.json                                                   
 generate_mock_data.py                                                              
+show_logic_map.py                                                                 
 step2_field_paths_reference.py                                                              
 python_naming_consistency_analyzer.py                                                              
+devin_startup_guide.py                                                              
 auto_logger.py                                                                    
+devin_setup.py                                                                    
 filter_odds_minutes.py /root/6-4-2025/step2.json, /                                 
 step7.py                                                                          
 data_flow_analyzer.py                                                              

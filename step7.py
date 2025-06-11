@@ -72,6 +72,12 @@ print(f"[DEBUG] step7.py imported at {datetime.now()}")
 # IMPORTANT: Always use models.py for validation. Field names are locked!
 # ============================================================================
 
+# MAINTENANCE NOTES:
+# - models.py: Only update if adding new fields to the pipeline
+# - Schema contract headers: Just comments, no maintenance needed
+# - FIELD_REFERENCE.md: Update only when adding new fields
+# - This schema contract is locked - DO NOT change existing field names
+
 # ---------------------------------------------------------------------------
 # Constants & configuration
 # ---------------------------------------------------------------------------

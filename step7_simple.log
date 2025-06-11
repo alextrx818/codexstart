@@ -2,12 +2,106 @@ Processing 18 valid matches provided directly
 Filtered to 18 in-play matches (status [2, 3, 4, 5, 6, 7, 8])
 STEP 7: STATUS FILTER (2–7)
 ================================================================================
-Filter Time: 2025-06-10 09:21:11 PM ET
-Data Generated: 2025-06-10 09:21:11 PM ET
+Filter Time: 2025-06-10 09:30:11 PM ET
+Data Generated: 2025-06-10 09:30:11 PM ET
 Daily Fetch: #0
 Statuses Filtered: [2, 3, 4, 5, 6, 7, 8]
 Included Matches Count: 18
 ================================================================================
+
+
+
+================================================================================
+                  CONCACAF U20 WOMEN'S CHAMPIONSHIP (Unknown)                   
+================================================================================
+
+
+[FINISHED]
+
+Match 1 of 3
+Match ID: ednm9whwkwwpryo
+Competition ID: kn54qllhy2qvy9d
+Filtered: 2025-06-10 09:30:11 PM ET
+------------------------------------------------------------
+COSTA RICA (W) U20 vs GUYANA (W) U20
+Score: 0-0                      Status: Finished
+────────────────────────────────────────────────────────────
+ Money Line
+   Home: -10000 │ Draw: +2500  │ Away: +4000 
+
+ Spread (Point +3.5)
+   Home: -111   │ Point: +3.5 │ Away: -111  
+
+ Over/Under (Line 5.25)
+   Over: +100   │ Line: 5.25 │ Under: -125  
+────────────────────────────────────────────────────────────
+ Weather: Overcast  ·  Temp: 69.8°F  ·  Wind: 13.6mph
+
+Match 2 of 3
+Match ID: y39mp1h6366nmoj
+Competition ID: kn54qllhy2qvy9d
+Filtered: 2025-06-10 09:30:11 PM ET
+------------------------------------------------------------
+COSTA RICA (W) U20 vs USA (W) U20
+Score: 0-0                      Status: Finished
+────────────────────────────────────────────────────────────
+ Money Line
+   Home: +650   │ Draw: +400   │ Away: -333  
+
+ Spread (Point -1.75)
+   Home: -111   │ Point: -1.75 │ Away: -111  
+
+ Over/Under (Line 3.5)
+   Over: -103   │ Line: 3.5 │ Under: -122  
+────────────────────────────────────────────────────────────
+ Weather: Overcast  ·  Temp: 73.4°F  ·  Wind: 9.2mph
+
+Match 3 of 3
+Match ID: 4wyrn4h68pnvq86
+Competition ID: kn54qllhy2qvy9d
+Filtered: 2025-06-10 09:30:11 PM ET
+------------------------------------------------------------
+COSTA RICA (W) U20 vs MEXICO (W) U20
+Score: 0-0                      Status: Finished
+────────────────────────────────────────────────────────────
+ Money Line
+   Home: +500   │ Draw: +333   │ Away: -227  
+
+ Spread (Point -1.25)
+   Home: -111   │ Point: -1.25 │ Away: -111  
+
+ Over/Under (Line 3.25)
+   Over: -109   │ Line: 3.25 │ Under: -115  
+────────────────────────────────────────────────────────────
+ Weather: Unknown
+
+
+
+================================================================================
+                   COLOMBIAN LIGA BETPLAY FEMENINA (Colombia)                   
+================================================================================
+
+
+[FINISHED]
+
+Match 1 of 1
+Match ID: 318q66hxoyv7qo9
+Competition ID: j1l4rjnhz31m7vx
+Filtered: 2025-06-10 09:30:11 PM ET
+------------------------------------------------------------
+JUNIOR (W) vs ALIANZA PETROLERA WOMEN
+Score: 0-0                      Status: Finished
+────────────────────────────────────────────────────────────
+ Money Line
+   Home: -125   │ Draw: +275   │ Away: +300  
+
+ Spread (Point +0.5)
+   Home: -125   │ Point: +0.5 │ Away: +100  
+
+ Over/Under (Line 2.75)
+   Over: -115   │ Line: 2.75 │ Under: -109  
+────────────────────────────────────────────────────────────
+ Weather: Cloudy with rain/partial Thunderstorms  ·  Temp: 82.4°F  ·  Wind: 4.0mph
 
 
 
@@ -21,7 +115,7 @@ Included Matches Count: 18
 Match 1 of 3
 Match ID: zp5rzgh5wk83q82
 Competition ID: 9d23xmvkhxqg8ny
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 COSTA RICA vs TRINIDAD TOBAGO
 Score: 0-0                      Status: First Half
@@ -40,7 +134,7 @@ Score: 0-0                      Status: First Half
 Match 2 of 3
 Match ID: 8yomo4h34d70q0j
 Competition ID: 9d23xmvkhxqg8ny
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 PUERTO RICO vs ST. VINCENT   GRENADINES
 Score: 0-0                      Status: First Half
@@ -59,7 +153,7 @@ Score: 0-0                      Status: First Half
 Match 3 of 3
 Match ID: 6ypq3nh3nj01md7
 Competition ID: 9d23xmvkhxqg8ny
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 EL SALVADOR vs SURINAME
 Score: 0-0                      Status: First Half
@@ -81,7 +175,7 @@ Score: 0-0                      Status: First Half
 Match 1 of 2
 Match ID: vjxm8ghlwzv3r6o
 Competition ID: 9d23xmvkhxqg8ny
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 GUYANA vs MONTSERRAT
 Score: 0-0                      Status: Second Half
@@ -100,7 +194,7 @@ Score: 0-0                      Status: Second Half
 Match 2 of 2
 Match ID: x7lm7phz71g7m2w
 Competition ID: 9d23xmvkhxqg8ny
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 PANAMA vs NICARAGUA
 Score: 0-0                      Status: Second Half
@@ -128,7 +222,7 @@ Score: 0-0                      Status: Second Half
 Match 1 of 1
 Match ID: dj2ryoh1kwnwq1z
 Competition ID: ngy0or5jh3qwzv3
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 BRAZIL vs PARAGUAY
 Score: 0-0                      Status: First Half
@@ -150,7 +244,7 @@ Score: 0-0                      Status: First Half
 Match 1 of 1
 Match ID: l7oqdehonvl5r51
 Competition ID: ngy0or5jh3qwzv3
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 ARGENTINA vs COLOMBIA
 Score: 0-0                      Status: Second Half
@@ -178,7 +272,7 @@ Score: 0-0                      Status: Second Half
 Match 1 of 2
 Match ID: 318q66hxoy89qo9
 Competition ID: jednm9whk0ryox8
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 CANADA vs COTE D'IVOIRE
 Score: 0-0                      Status: First Half
@@ -197,7 +291,7 @@ Score: 0-0                      Status: First Half
 Match 2 of 2
 Match ID: k82rekhgvp27rep
 Competition ID: jednm9whk0ryox8
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 MEXICO vs TURKIYE
 Score: 0-0                      Status: First Half
@@ -219,7 +313,7 @@ Score: 0-0                      Status: First Half
 Match 1 of 1
 Match ID: y39mp1h63gdlmoj
 Competition ID: jednm9whk0ryox8
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 USA vs SWITZERLAND
 Score: 0-0                      Status: Second Half
@@ -238,75 +332,19 @@ Score: 0-0                      Status: Second Half
 
 
 ================================================================================
-                     NORTH MACEDONIA CUP (North Macedonia)                      
-================================================================================
-
-
-[FINISHED]
-
-Match 1 of 1
-Match ID: pxwrxlhyp89jryk
-Competition ID: yl5ergph72r8k0o
-Filtered: 2025-06-10 09:21:11 PM ET
-------------------------------------------------------------
-FC STRUGA vs FC VARDAR SKOPJE
-Score: 0-0                      Status: Finished
-────────────────────────────────────────────────────────────
- Money Line
-   Home: +400   │ Draw: +220   │ Away: -139  
-
- Spread (Point -0.75)
-   Home: -125   │ Point: -0.75 │ Away: +100  
-
- Over/Under (Line 1.75)
-   Over: -130   │ Line: 1.75 │ Under: +102  
-────────────────────────────────────────────────────────────
- Weather: Overcast  ·  Temp: 60.8°F  ·  Wind: 2.5mph
-
-
-
-================================================================================
-                             ROMANIAN CUP (Romania)                             
-================================================================================
-
-
-[FINISHED]
-
-Match 1 of 1
-Match ID: 3glrw7hnk2n8qdy
-Competition ID: z8yomo4hg9q0j6l
-Filtered: 2025-06-10 09:21:11 PM ET
-------------------------------------------------------------
-HERMANNSTADT vs CFR CLUJ
-Score: 0-0                      Status: Finished
-────────────────────────────────────────────────────────────
- Money Line
-   Home: +400   │ Draw: +225   │ Away: -139  
-
- Spread (Point -0.75)
-   Home: -125   │ Point: -0.75 │ Away: +100  
-
- Over/Under (Line 2.0)
-   Over: -122   │ Line: 2.0 │ Under: -103  
-────────────────────────────────────────────────────────────
- Weather: Sunny  ·  Temp: 55.4°F  ·  Wind: 9.6mph
-
-
-
-================================================================================
                          USL LEAGUE TWO (United States)                         
 ================================================================================
 
 
-[FIRST HALF]
+[HALF-TIME]
 
 Match 1 of 1
 Match ID: y0or5jh8lynnqwz
 Competition ID: gx7lm7ph9lgm2wd
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 WEST CHESTER UNITED vs OCEAN CITY NOREASTERS
-Score: 0-0                      Status: First Half
+Score: 0-0                      Status: Half-time
 ────────────────────────────────────────────────────────────
  Money Line
    Home: +137   │ Draw: +250   │ Away: +162  
@@ -325,7 +363,7 @@ Score: 0-0                      Status: First Half
 Match 1 of 1
 Match ID: y0or5jh8ly5nqwz
 Competition ID: gx7lm7ph9lgm2wd
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 MISSISSIPPI BRILLA vs RED RIVER
 Score: 0-0                      Status: Second Half
@@ -339,44 +377,6 @@ Score: 0-0                      Status: Second Half
  Weather: Unknown
 
 
-[FINISHED]
-
-Match 1 of 2
-Match ID: y0or5jh8lyn0qwz
-Competition ID: gx7lm7ph9lgm2wd
-Filtered: 2025-06-10 09:21:11 PM ET
-------------------------------------------------------------
-WEST VIRGINIA ALLIANCE FC vs LEXINGTON 2
-Score: 0-0                      Status: Finished
-────────────────────────────────────────────────────────────
- Money Line: Data not available
-
- Spread: Data not available
-
- Over/Under: Data not available
-────────────────────────────────────────────────────────────
- Weather: Unknown
-
-Match 2 of 2
-Match ID: l5ergph4oxl1r8k
-Competition ID: gx7lm7ph9lgm2wd
-Filtered: 2025-06-10 09:21:11 PM ET
-------------------------------------------------------------
-LANSING CITY vs FLINT CITY BUCKS
-Score: 0-0                      Status: Finished
-────────────────────────────────────────────────────────────
- Money Line
-   Home: +500   │ Draw: +333   │ Away: -227  
-
- Spread (Point -1.25)
-   Home: -118   │ Point: -1.25 │ Away: -105  
-
- Over/Under (Line 3.0)
-   Over: +102   │ Line: 3.0 │ Under: -130  
-────────────────────────────────────────────────────────────
- Weather: Partially cloudy  ·  Temp: 84.2°F  ·  Wind: 4.5mph
-
-
 
 ================================================================================
                             USL WLW (United States)                             
@@ -388,7 +388,7 @@ Score: 0-0                      Status: Finished
 Match 1 of 1
 Match ID: 2y8m4zh5j053ql0
 Competition ID: l965mkyhnj1r1ge
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 MARIN FC (W) vs STOCKTON CARGO(W)
 Score: 0-0                      Status: Half-time
@@ -416,7 +416,7 @@ Score: 0-0                      Status: Half-time
 Match 1 of 1
 Match ID: jw2r09hkn46erz8
 Competition ID: z8yomo4h24dq0j6
-Filtered: 2025-06-10 09:21:11 PM ET
+Filtered: 2025-06-10 09:30:11 PM ET
 ------------------------------------------------------------
 UNION KC (W) vs OKLAHOMA CITY (W)
 Score: 0-0                      Status: Second Half
@@ -436,7 +436,7 @@ Score: 0-0                      Status: Second Half
 ================================================================================
                                  SUMMARY REPORT                                 
 ================================================================================
-Report Generated: 2025-06-10 09:21:11 PM ET
+Report Generated: 2025-06-10 09:30:11 PM ET
 Processing Time: 0.01 seconds
 
 MATCH STATISTICS:
@@ -445,27 +445,27 @@ MATCH STATISTICS:
 
 DATA AVAILABILITY:
   Matches with Weather Data: 16 (88.9%)
-  Matches with Odds Data: 16 (88.9%)
+  Matches with Odds Data: 17 (94.4%)
 
 STATUS BREAKDOWN (In-Play = Status 2-7):
   Finished: 4 (22.2%)
-  First Half: 7 (38.9%)
-  Half-time: 1 (5.6%)
+  First Half: 6 (33.3%)
+  Half-time: 2 (11.1%)
   Second Half: 6 (33.3%)
 
 TOP COMPETITIONS:
   1. FIFA World Cup qualification (CONCACAF) (Unknown): 5 matches
-  2. USL League Two (United States): 4 matches
-  3. International Friendly (Unknown): 3 matches
+  2. International Friendly (Unknown): 3 matches
+  3. CONCACAF U20 Women's Championship (Unknown): 3 matches
   4. FIFA World Cup qualification (CONMEBOL) (Unknown): 2 matches
-  5. USL WLW (United States): 1 matches
-  6. United States Women's Premier League (United States): 1 matches
-  7. North Macedonia Cup (North Macedonia): 1 matches
-  8. Romanian Cup (Romania): 1 matches
+  5. USL League Two (United States): 2 matches
+  6. USL WLW (United States): 1 matches
+  7. United States Women's Premier League (United States): 1 matches
+  8. Colombian Liga Betplay Femenina (Colombia): 1 matches
 
 ================================================================================
 END OF REPORT
 ================================================================================
-Fetched at: 09:21 PM 06/10/2025 Eastern Time
+Fetched at: 09:30 PM 06/10/2025 Eastern Time
 Total In-Play Matches (Status 2-7): 18
 

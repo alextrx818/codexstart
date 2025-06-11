@@ -106,6 +106,12 @@ This creates step2.json without requiring separate manual execution.
 # IMPORTANT: Use models.py for validation when processing this data
 # ============================================================================
 
+# MAINTENANCE NOTES:
+# - models.py: Only update if adding new fields to the pipeline
+# - Schema contract headers: Just comments, no maintenance needed
+# - FIELD_REFERENCE.md: Update only when adding new fields
+# - This schema contract is locked - DO NOT change existing field names
+
 import asyncio
 import aiohttp
 import json

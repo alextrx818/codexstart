@@ -93,6 +93,12 @@ Step 2 automatically converts environment data to user-friendly formats:
 # CRITICAL: Use models.py MatchSummary for validation. Never change field names!
 # ============================================================================
 
+# MAINTENANCE NOTES:
+# - models.py: Only update if adding new fields to the pipeline
+# - Schema contract headers: Just comments, no maintenance needed
+# - FIELD_REFERENCE.md: Update only when adding new fields
+# - This schema contract is locked - DO NOT change existing field names
+
 import json
 import logging
 from datetime import datetime

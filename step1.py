@@ -71,6 +71,41 @@ The in-memory data is passed directly to extract_merge_summarize() for immediate
 This creates step2.json without requiring separate manual execution.
 """
 
+# ============================================================================
+# SCHEMA CONTRACT - DO NOT MODIFY FIELD NAMES
+# ============================================================================
+# This file produces step1.json with the following structure:
+# {
+#   "live_matches": [
+#     {
+#       "match_id": str,              # Unique match identifier
+#       "home_team": str,             # Home team name
+#       "away_team": str,             # Away team name
+#       "home_team_id": str,          # Home team ID
+#       "away_team_id": str,          # Away team ID
+#       "status_id": int,             # Match status (1-13, see models.MatchStatus)
+#       "home_score": int,            # Current home score
+#       "away_score": int,            # Current away score
+#       "match_time": int,            # Unix timestamp
+#       "competition_id": str,        # Competition ID
+#       "venue_id": str,              # Venue ID
+#       "round": int,                 # Round number
+#       "environment": {              # Weather data (optional)
+#         "weather": int/str,         # Weather code or description
+#         "temperature": str,         # e.g. "21°C"
+#         "wind_speed": str,          # e.g. "5.1m/s"
+#         "humidity": str,            # e.g. "65%"
+#         "pressure": str             # e.g. "1013hPa"
+#       }
+#     }
+#   ],
+#   "timestamp": str,                 # ISO format timestamp
+#   "total_matches_fetched": int      # Total count
+# }
+#
+# IMPORTANT: Use models.py for validation when processing this data
+# ============================================================================
+
 import asyncio
 import aiohttp
 import json
@@ -1172,14 +1207,8 @@ def create_unified_status_summary(live_matches_data):
     for match in matches:
         status_id = extract_status_id(match)
         if status_id is not None:
+            status_counts[status_id] = status_counts.get(status_id, 0) + 1
             matches_with_status += 1
-            status_desc = status_desc_map.get(status_id, f"Unknown Status")
-            if status_id not in status_counts:
-                status_counts[status_id] = {
-                    "description": status_desc,
-                    "count": 0
-                }
-            status_counts[status_id]["count"] += 1
     
     # Create formatted summary lines and structured data
     formatted_summary = []

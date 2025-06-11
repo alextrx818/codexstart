@@ -1,0 +1,306 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "match_id": {
+      "type": "string"
+    },
+    "home": {
+      "type": "string"
+    },
+    "away": {
+      "type": "string"
+    },
+    "home_id": {
+      "type": "string"
+    },
+    "away_id": {
+      "type": "string"
+    },
+    "score": {
+      "type": "string"
+    },
+    "status_id": {
+      "type": "integer"
+    },
+    "competition": {
+      "type": "string"
+    },
+    "competition_id": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "match_time": {
+      "type": "integer"
+    },
+    "kickoff": {
+      "type": "string"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "home_position": {
+      "type": "string"
+    },
+    "away_position": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "money_line": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "money_line_american": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      }
+    },
+    "spread": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "spread_american": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "over_under": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "over_under_american": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "corners": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "corners_american": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      }
+    },
+    "odds_company_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "odds_company_name": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "odds": {
+      "type": "object",
+      "properties": {
+        "2": {
+          "type": "object",
+          "properties": {
+            "money_line": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "number",
+                    "string"
+                  ]
+                }
+              }
+            },
+            "spread": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "number",
+                    "string"
+                  ]
+                }
+              }
+            },
+            "over_under": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "number",
+                    "string"
+                  ]
+                }
+              }
+            },
+            "corners": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "number",
+                    "string"
+                  ]
+                }
+              }
+            }
+          },
+          "required": [
+            "corners",
+            "money_line",
+            "over_under",
+            "spread"
+          ]
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "properties": {
+        "weather": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "weather_description": {
+          "type": "string"
+        },
+        "temperature": {
+          "type": "string"
+        },
+        "temperature_fahrenheit": {
+          "type": "string"
+        },
+        "humidity": {
+          "type": "string"
+        },
+        "wind_speed": {
+          "type": "string"
+        },
+        "wind_speed_mph": {
+          "type": "string"
+        },
+        "pressure": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "humidity",
+        "pressure",
+        "temperature",
+        "temperature_fahrenheit",
+        "weather",
+        "weather_description",
+        "wind_speed",
+        "wind_speed_mph"
+      ]
+    },
+    "events": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "away",
+    "away_id",
+    "away_position",
+    "competition",
+    "competition_id",
+    "corners",
+    "corners_american",
+    "country",
+    "environment",
+    "events",
+    "home",
+    "home_id",
+    "home_position",
+    "kickoff",
+    "match_id",
+    "match_time",
+    "money_line",
+    "money_line_american",
+    "odds",
+    "odds_company_id",
+    "odds_company_name",
+    "over_under",
+    "over_under_american",
+    "score",
+    "spread",
+    "spread_american",
+    "status",
+    "status_id",
+    "venue"
+  ],
+  "$id": "https://github.com/alextrx818/codexstart/schemas/match-summary/v2025-06-11",
+  "title": "Match Summary",
+  "description": "Sports match data from step2 processing",
+  "version": "2025-06-11"
+}

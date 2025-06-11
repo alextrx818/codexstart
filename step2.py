@@ -28,283 +28,71 @@ Step 2 automatically converts environment data to user-friendly formats:
 2. TEMPERATURE - Converts Celsius to Fahrenheit:
    - Field: temperature_fahrenheit
    - Formula: (°C × 9/5) + 32
-   - Examples: 30°C → 86.0°F, 29°C → 84.2°F
-
-3. WIND SPEED - Converts m/s to mph:
-   - Field: wind_speed_mph
-   - Formula: m/s × 2.237
-   - Examples: 7.0m/s → 15.7mph, 6.5m/s → 14.5mph
-
-NOTE ON ODDS DATA STRUCTURE:
----------------------------
-The odds data from the API is structured as an ARRAY OF ARRAYS (nested array/2D array).
-Each element in the main array is itself an array containing:
-  [timestamp, string_value, numeric_odds1, numeric_odds2, numeric_odds3, integer1, integer2, score_string]
-Example:
-  [1749393410, "8", 8.5, 5.9, 1.23, 2, 0, "0-1"]
-
-This structure contains odds for asia, eu, and bs (bookmakers).
-
-ODDS DATA STRUCTURE AND FILTERING:
-----------------------------------
-Each odds array contains 8 elements: [timestamp, minute, val1, val2, val3, status, sealed, score]
-- [0] timestamp: Unix timestamp when odds were recorded
-- [1] minute: Match minute (string) - we filter for minutes 2-6
-- [2] val1: First odds value (varies by type)
-    - Money Line: Home win odds
-    - Spread: Home team odds
-    - Over/Under: Over odds
-    - Corners: Over odds
-- [3] val2: The line/handicap
-    - Money Line: Draw odds
-    - Spread: Handicap (positive=home gives, negative=away gives)
-    - Over/Under: Total goals line
-    - Corners: Total corners line
-- [4] val3: Third odds value (varies by type)
-    - Money Line: Away win odds
-    - Spread: Away team odds
-    - Over/Under: Under odds
-    - Corners: Under odds
-- [5] status: Match status code
-- [6] sealed: Whether odds are sealed (0=No, 1=Yes)
-- [7] score: Current score as "home-away" string
-
-ODDS TYPES (renamed for clarity):
----------------------------------
-1. Money Line (formerly 'eu' - European odds):
-   - val1: Home win odds
-   - val2: Draw odds  
-   - val3: Away win odds
-   
-2. Spread (formerly 'asia' - Asian Handicap):
-   - val1: Home team odds
-   - val2: Handicap (positive=home gives, negative=away gives)
-   - val3: Away team odds
-   
-3. Over/Under (formerly 'bs' - Ball Size/Total Goals):
-   - val1: Over odds
-   - val2: Total goals line
-   - val3: Under odds
-   
-4. Corners (formerly 'cr' - Corner kicks):
-   - val1: Over odds
-   - val2: Total corners line
-   - val3: Under odds
-
-IMPORTANT: ODDS FORMATS
------------------------
-The API returns odds in two different formats depending on the market:
-
-1. MONEY LINE (eu) - Uses DECIMAL ODDS (European format):
-   - Always ≥ 1.00 (includes your stake)
-   - Examples: 1.66, 3.40, 6.00
-   - To calculate payout: bet_amount × decimal_odds = total_return
-
-2. SPREAD, OVER/UNDER, CORNERS (asia, bs, cr) - Use HONG KONG ODDS:
-   - Shows profit per 1 unit bet (excludes stake)
-   - Can be < 1.00 (when profit is less than stake)
-   - Examples: 0.77, 0.85, 0.90, 1.50
-   - To calculate payout: bet_amount × (1 + hk_odds) = total_return
-
-How to identify the format:
-- Any odds value < 1.00 MUST be Hong Kong format
-- Money Line channel (eu) ALWAYS uses Decimal format
-- Spread/O-U/Corners channels (asia/bs/cr) ALWAYS use Hong Kong format
-
-ODDS CONVERSION FORMULAS
-------------------------
-Converting to American Odds format:
-
-1. DECIMAL ODDS → AMERICAN ODDS
-   Let D = decimal odd (D ≥ 1.00)
-   
-   If D ≥ 2.00:
-       American = +(D - 1) × 100
-   
-   If 1.00 ≤ D < 2.00:
-       American = -100 / (D - 1)
-   
-   Examples:
-   - D = 3.50: (3.50 - 1) × 100 = +250
-   - D = 1.66: -100 / (1.66 - 1) = -152
-
-2. HONG KONG ODDS → AMERICAN ODDS
-   Let H = Hong Kong odd (profit per 1 unit)
-   
-   If H ≥ 1.00:
-       American = +H × 100
-   
-   If 0 < H < 1.00:
-       American = -100 / H
-   
-   Examples:
-   - H = 1.50: 1.50 × 100 = +150
-   - H = 0.85: -100 / 0.85 = -118
-
-CONVERSION SUMMARY:
-- Money Line: Use Decimal → American conversion
-- Spread, O/U, Corners: Use Hong Kong → American conversion
-
-ODDS FILTERING LOGIC:
---------------------
-Step 2 filters the odds data to only keep entries from the early minutes of each match:
-- The odds arrays are found in: match["odds"][company_id][odds_type]
-  where company_id is the betting company (e.g., "2", "4", "5", etc.)
-  and odds_type is one of: "asia" (spread), "bs" (over/under), "eu" (moneyline), or "cr"
-- Each odds array contains 8 elements: [timestamp, minute, odds1, odds2, odds3, int1, int2, score]
-- Only keeps odds from minutes 2-6 (filters out minute 1 and anything after minute 6)
-- The minute value is found in the second position of each odds array (index 1)
-- If there are multiple odds updates within the same minute, only the most recent one is kept
-  (determined by the highest timestamp in the first position)
-- This filtering is applied to all odds types: asia (spread), bs (over/under), eu (moneyline), and cr
-- The result is a cleaner dataset with just 5 odds entries per type per company, focusing on 
-  the critical early match period when odds are most volatile and informative
-
-MERGING LOGIC:
---------------
-ID-Based Connections:
-1. BY MATCH ID:
-   - Live endpoint → gives you match.id
-   - Details endpoint → query with match.id → returns detailed match info (environment, venue, etc.)
-   - Odds endpoint → query with match.id → returns betting odds
-
-2. BY TEAM ID:
-   - Live/Details endpoints → give you home_team_id and away_team_id
-   - Team endpoint → query with team_id → returns team names, logos, market values
-
-3. BY COMPETITION ID:
-   - Live/Details endpoints → give you competition_id
-   - Competition endpoint → query with competition_id → returns competition name, type, logo
-
-4. BY COUNTRY ID:
-   - Team endpoint → gives you country_id (which country the team is from)
-   - Competition endpoint → gives you country_id (which country hosts the competition)
-   - Country endpoint → returns all countries (you filter by country_id)
-
-The Complete Flow:
-1. Get live matches (each has match_id, home_team_id, away_team_id, competition_id)
-2. Use match_id → fetch details & odds
-3. Collect all unique team_ids → fetch team info
-4. Collect all unique competition_ids → fetch competition info  
-5. Fetch country list once (for reference)
-
-This mapping allows Step 2 to merge everything together - taking a match and enriching it with 
-team names, competition details, country info, weather data, and betting odds all connected by their respective IDs.
-
-FIELDS TO EXTRACT FROM STEP 1:
-------------------------------
-ENDPOINT 1: /match/detail_live (live)
-- id (match id)
-
-ENDPOINT 2: /match/recent/list (details)
-- id (match id)
-- season_id
-- competition_id
-- home_team_id
-- away_team_id
-- status_id
-- home_scores[]
-- away_scores[]
-- home_position
-- away_position
-- environment{} (weather data - OPTIONAL:
-  - weather_id
-  - pressure
-  - temperature
-  - wind_speed
-  - humidity
-  - weather)
-
-ENDPOINT 3: /odds/history (odds)
-Results keyed by Company ID (2, 4, 5, 9, 10, 13, 15, 16, 17, 22):
-- asia[] (8 elements per array)
-- bs[] (8 elements per array)
-- eu[] (8 elements per array)
-- cr[] (8 elements per array)
-Each array contains: [timestamp, match_time, odds_values..., status, sealed, score]
-
-ENDPOINT 4: /team/additional/list (team)
-- id (team id)
-- competition_id
-- country_id
-- name
-- uid (merged team id)
-
-ENDPOINT 5: /competition/additional/list (competition)
-- id (competition id)
-- category_id
-- country_id
-- name
-
-ENDPOINT 6: /country/list (country)
-- id (country id)
-- category_id
-- name
-
-Step 2: Process and merge football match data
-==============================================
-
-Reads step1.json and creates merged summaries with enriched data.
-
-IMPORTANT ODDS FIELD UPDATES (June 8, 2025):
-============================================
-We have renamed the odds fields from their original API names to more descriptive, user-friendly names.
-This makes the data more intuitive and self-documenting.
-
-FIELD NAME MAPPINGS (API → Our Names):
---------------------------------------
-- "eu" → "money_line" (European odds / Money Line / ML)
-- "asia" → "spread" (Asian Handicap / Spread betting)  
-- "bs" → "over_under" (Ball Size / Over-Under / O/U / OU / Total Goals)
-- "cr" → "corners" (Corner kick totals)
-
-You can identify these fields by either name:
-- Money Line = EU = European odds = ML
-- Spread = ASIA = Asian Handicap
-- Over/Under = BS = Ball Size = O/U = OU = Total Goals
-- Corners = CR = Corner kicks
-
-OUTPUT STRUCTURE CHANGES:
-------------------------
-Previously: Nested "odds" object containing all odds types
-Now: Flat fields at the root level of each match summary:
-  - money_line: Array of money line odds entries
-  - spread: Array of spread betting entries  
-  - over_under: Array of over/under entries
-  - corners: Array of corner totals entries
-  - odds_company_id: Selected company ID (e.g., "2" for BET365)
-  - odds_company_name: Company name (e.g., "BET365")
-
-ARRAY STRUCTURE (8 elements for each odds entry):
--------------------------------------------------
-[0] Timestamp: Unix timestamp when odds were recorded
-[1] Match minute: String value (we filter for minutes "2" through "6")
-[2] First value: Varies by odds type
-    - Money Line: Home win odds
-    - Spread: Home team odds
-    - Over/Under: Over odds
-    - Corners: Over odds
-[3] Second value: The line/handicap
-    - Money Line: Draw odds
-    - Spread: Handicap (positive=home gives, negative=away gives)
-    - Over/Under: Total goals line
-    - Corners: Total corners line
-[4] Third value: Varies by odds type
-    - Money Line: Away win odds
-    - Spread: Away team odds
-    - Over/Under: Under odds
-    - Corners: Under odds
-[5] Match status: Integer status code
-[6] Sealed: 0=Not sealed, 1=Sealed
-[7] Score: Current score as "home-away" string
-
-FILTERING AND SELECTION:
------------------------
-- Only odds from minutes 2-6 are included (minute 1 and 7+ are filtered out)
-- Only ONE betting company is selected per match (BET365 is preferred)
-- If multiple odds exist for the same minute, only the latest is kept
-
+{{ ... }}
 """
+
+# ============================================================================
+# SCHEMA CONTRACT - DO NOT MODIFY FIELD NAMES
+# ============================================================================
+# This file reads step1.json and produces step2.json with EXACT field names:
+# {
+#   "summaries": [
+#     {
+#       "match_id": str,                    # REQUIRED: Unique match identifier
+#       "home": str,                        # REQUIRED: Home team name
+#       "away": str,                        # REQUIRED: Away team name
+#       "home_id": str,                     # REQUIRED: Home team ID
+#       "away_id": str,                     # REQUIRED: Away team ID
+#       "score": str,                       # REQUIRED: Format "X-Y"
+#       "status": int,                      # REQUIRED: Match status code
+#       "status_id": int,                   # REQUIRED: Same as status
+#       "competition": str,                 # REQUIRED: Competition name
+#       "competition_id": str,              # REQUIRED: Competition ID
+#       "country": str,                     # REQUIRED: Country name
+#       "match_time": int,                  # REQUIRED: Unix timestamp
+#       "kickoff": str,                     # Kickoff time
+#       "venue": str,                       # Venue name
+#       "home_position": str,               # Home team position
+#       "away_position": str,               # Away team position
+#       
+#       # ODDS FIELDS - Both formats supported for compatibility
+#       "money_line": [[timestamp, source, home, draw, away, status, ?, score]],
+#       "money_line_american": [[...same structure...]],
+#       "spread": [[timestamp, source, home, handicap, away, status, ?, score]],
+#       "spread_american": [[...same structure...]],
+#       "over_under": [[timestamp, source, over, line, under, status, ?, score]],
+#       "over_under_american": [[...same structure...]],
+#       
+#       # Additional odds
+#       "corners": [...],
+#       "corners_american": [...],
+#       
+#       # Environment data
+#       "environment": {
+#         "weather": int/str,               # Weather code or description
+#         "weather_description": str,       # Human-readable weather
+#         "temperature": str,               # Original temp with unit
+#         "temperature_fahrenheit": str,   # Converted to F
+#         "wind_speed": str,                # Original with unit
+#         "wind_speed_mph": str,            # Converted to mph
+#         "humidity": str,                  # With %
+#         "pressure": str                   # With unit
+#       },
+#       
+#       # Other fields
+#       "events": [...],                    # Match events
+#       "odds": {...},                      # Raw odds data
+#       "odds_company_id": str,
+#       "odds_company_name": str
+#     }
+#   ],
+#   "$schema": "https://github.com/alextrx818/codexstart/schemas/match-summary/v2025-06-11",
+#   "version": "2025-06-11"
+# }
+#
+# CRITICAL: Use models.py MatchSummary for validation. Never change field names!
+# ============================================================================
+
 import json
 import logging
 from datetime import datetime
@@ -865,6 +653,8 @@ def main():
         # Call Step 7 after Step 2 completes
         try:
             import step7
+            import importlib
+            importlib.reload(step7)  # Force reload to pick up any code changes
             logger.info("Starting Step 7 (filter & pretty-print)...")
             step7.run_step7(matches_list=merged_data['summaries'])
         except (ImportError, AttributeError) as e:
@@ -972,6 +762,8 @@ def run_step2(pipeline_start_time=None):
             # Call Step 7 after Step 2 completes
             try:
                 import step7
+                import importlib
+                importlib.reload(step7)  # Force reload to pick up any code changes
                 logger.info("Starting Step 7 (filter & pretty-print)...")
                 step7.run_step7(matches_list=summaries)
             except (ImportError, AttributeError) as e:

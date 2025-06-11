@@ -22,8 +22,55 @@ from pathlib import Path
 import pytz
 import time
 
+# Import data models for type safety and consistency
+from models import Step2Output, MatchSummary, validate_step2_json
+
 # DEBUG: Print when module is imported
 print(f"[DEBUG] step7.py imported at {datetime.now()}")
+
+# ============================================================================
+# SCHEMA CONTRACT - DO NOT MODIFY FIELD NAMES
+# ============================================================================
+# This file reads step2.json which MUST have this exact structure:
+# {
+#   "summaries": [
+#     {
+#       "match_id": str,              # Used for logging
+#       "home": str,                  # Team names for display
+#       "away": str,
+#       "score": str,                 # Format "X-Y"
+#       "status_id": int,             # CRITICAL: Used for filtering (2-7 = in-play)
+#       "competition": str,           # Competition name
+#       "competition_id": str,        # Competition ID
+#       "country": str,               # Country name
+#       
+#       # ODDS FIELDS - We check BOTH field names for compatibility:
+#       "money_line": [...] OR "money_line_american": [...],
+#       "spread": [...] OR "spread_american": [...],
+#       "over_under": [...] OR "over_under_american": [...],
+#       
+#       # Environment data (optional)
+#       "environment": {
+#         "weather_description": str,
+#         "temperature_fahrenheit": str,  # e.g. "72.5°F"
+#         "wind_speed_mph": str           # e.g. "10.2mph"
+#       }
+#     }
+#   ]
+# }
+#
+# OUTPUT: step7_simple.log with formatted match information
+#
+# FILTERING: Only matches with status_id in [2,3,4,5,6,7] are processed
+# - 2: First Half
+# - 3: Half-time  
+# - 4: Second Half
+# - 5: Overtime
+# - 6: Overtime Half-time
+# - 7: Penalties
+#
+# IMPORTANT: Always use models.py for validation. Field names are locked!
+# ============================================================================
 
 # ---------------------------------------------------------------------------
 # Constants & configuration
@@ -147,10 +194,10 @@ def write_match_body(logger: logging.Logger, match: dict):
     temp = env.get("temperature_fahrenheit", "") or "N/A"
     wind = env.get("wind_speed_mph", "") or "N/A"
 
-    # Get latest odds
-    ml = match.get("money_line_american", [])
-    sp = match.get("spread_american", [])
-    ou = match.get("over_under_american", [])
+    # Get latest odds - check both field names for compatibility
+    ml = match.get("money_line_american", []) or match.get("money_line", [])
+    sp = match.get("spread_american", []) or match.get("spread", [])
+    ou = match.get("over_under_american", []) or match.get("over_under", [])
 
     # Header
     logger.info(f"{home.upper()} vs {away.upper()}")
@@ -292,6 +339,12 @@ def write_summary_footer(logger, in_play, comp_groups, start_time):
     logger.info("=" * 80)
     logger.info("END OF REPORT")
     logger.info("=" * 80)
+    
+    # Add timestamp at the end
+    ny_time = datetime.now(TZ)
+    timestamp = ny_time.strftime("%I:%M %p %m/%d/%Y")
+    logger.info(f"Fetched at: {timestamp} Eastern Time")
+    logger.info(f"Total In-Play Matches (Status 2-7): {len(in_play)}")
     logger.info("")
 
 # ---------------------------------------------------------------------------
@@ -357,19 +410,27 @@ def run_step7(matches_list=None):
     logger = setup_logger()
     
     try:
-        # If matches provided directly, use them
+        # If matches provided directly, validate them
         if matches_list is not None:
-            summaries = matches_list
-            logger.info(f"Processing {len(summaries)} matches provided directly")
+            # Validate each match using the model
+            summaries = []
+            for match_dict in matches_list:
+                try:
+                    validated_match = MatchSummary.model_validate(match_dict)
+                    summaries.append(validated_match.model_dump())
+                except Exception as e:
+                    logger.warning(f"Skipping invalid match: {e}")
+                    continue
+            logger.info(f"Processing {len(summaries)} valid matches provided directly")
         else:
-            # Otherwise load from step2.json
-            if not STEP2_FILE.exists():
-                logger.error(f"❌ File not found: {STEP2_FILE}")
+            # Otherwise load and validate from step2.json
+            try:
+                data = validate_step2_json(str(STEP2_FILE))
+                summaries = [m.model_dump() for m in data.summaries]
+                logger.info(f"Loaded and validated {len(summaries)} matches from {STEP2_FILE}")
+            except Exception as e:
+                logger.error(f"❌ Failed to validate step2.json: {e}")
                 return
-            
-            data = json.loads(STEP2_FILE.read_text(encoding="utf-8"))
-            summaries = data.get("summaries", [])
-            logger.info(f"Loaded {len(summaries)} matches from {STEP2_FILE}")
         
         # Filter for in-play matches
         in_play = [m for m in summaries if m.get("status_id") in STATUS_FILTER]
@@ -406,8 +467,6 @@ def run_step7(matches_list=None):
                     write_match_body(logger, match)
         
         write_summary_footer(logger, in_play, comp_groups, start_time)
-        
-        logger.info(f"Step 7 completed successfully - wrote {len(in_play)} matches to {LOG_FILE}")
         
     except json.JSONDecodeError as e:
         logger.error(f"❌ Invalid JSON: {e}")
